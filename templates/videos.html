@@ -1,1 +1,6 @@
-<p>{{greeting}}</p>
+<center>
+<div ng-repeat = "x in greeting" class = "col-sm-3">
+<img ng-src = '{{x.image_path}}'/>
+<div>{{x.title}}</div>
+</div>
+</center>

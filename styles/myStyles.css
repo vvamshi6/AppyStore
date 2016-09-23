@@ -80,3 +80,12 @@ body{
   text-align: left;
 }
 /* Modal Content */
+/*Grid sytem for data*/
+.row.unlimited-items {
+  flex-wrap: wrap;
+}
+/*Setting no of columns for each row*/
+.row.unlimited-items .col{
+  flex: none;
+  width: 25%;
+}

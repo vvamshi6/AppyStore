@@ -18,7 +18,8 @@ angular.module('appyStore')
            height: 320,
            space: 220,
            clicking:true,
-           autoRotationSpeed: 4000,
+           scrolling:true,
+           autoRotationSpeed: 15000,
            loop: true
        };
             angular.forEach($scope.result,function(i){
