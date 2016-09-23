@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/parents_blog_grid_item_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_ten" >
+
+    <!-- Top Part -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parents_blog_item_top_RL_height" >
+
+        <ImageView
+            android:id="@+id/parents_blog_item_image_IV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null" />
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/parents_blog_item_head_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_ten"
+            android:layout_marginTop="@dimen/margin_ten"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/parents_blog_head_demo_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <!-- Bottom Part -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_ten" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/parents_blog_item_type_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/parents_blog_item_type_demo_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/parents_blog_item_type_demo_txt" />
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/parents_blog_item_post_time_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/parents_blog_item_type_TV"
+            android:layout_marginTop="@dimen/margin_ten"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/parents_blog_item_post_time_demo_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+</LinearLayout>

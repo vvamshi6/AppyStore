@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.appy.store.lite.progress.helper.AppystoreLoadingIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:indicator="BallPulse"
+             app:indicator_color="@color/progress_loading_color"  />
+    </RelativeLayout>
+
+</RelativeLayout>

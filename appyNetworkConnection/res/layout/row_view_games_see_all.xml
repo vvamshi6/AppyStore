@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appy.store.lite.ripple.RippleDecoratorView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:rdv_rippleAnimationDuration="800"
+    app:rdv_rippleAnimationTrigger="onDown"
+    app:rdv_rippleCentered="true"
+    app:rdv_rippleColor="@android:color/holo_blue_dark"
+    app:rdv_rippleRadius="60dp"
+    app:rdv_rippleStyle="fill"
+    app:rdv_zoomAnimation="true"
+    app:rdv_zoomAnimationDuration="400"
+    app:rdv_zoomAnimationTrigger="onTap" >
+
+    <LinearLayout
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_image_back_height"
+            android:layout_height="@dimen/game_image_back_height"
+            android:background="@drawable/border_image" >
+
+            <ImageView
+                android:id="@+id/dashboard_gridItem_image_IV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/game_image_height"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:paddingLeft="@dimen/dp_3"
+                android:paddingRight="@dimen/dp_3" />
+
+            <LinearLayout
+                android:id="@+id/video_content_duration_LL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_five"
+                android:layout_marginLeft="@dimen/margin_five"
+                android:background="@drawable/videos_categories_play__tranparent_box"
+                android:ellipsize="end"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp_5"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/history_item_play_icon_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_five"
+                    android:background="@drawable/videos_categories_play_icon"
+                    android:contentDescription="@null" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/history_video_lenght_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_five"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:singleLine="true"
+                    android:text="@string/history_video_length_txt"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/history_video_lenght" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locked_overlay_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashboard_gridItem_image_height"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:alpha=".50"
+                android:background="@drawable/locked_item_transparent_bg"
+                android:gravity="bottom"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_5" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/videos_categories_locked_icon" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:text="@string/locked_txt"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/dashboard_gridItem_name_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_five"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h3" />
+    </LinearLayout>
+
+</com.appy.store.lite.ripple.RippleDecoratorView>

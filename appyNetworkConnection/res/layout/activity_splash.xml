@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/child_dashboard_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/splash_txt_LL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_a"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_splash_screen_logo"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <com.appy.store.lite.progress.helper.AppystoreLoadingIndicator
+        android:id="@+id/splash_screen_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_txt_LL"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicator="BallPulse"
+        app:indicator_color="@android:color/white" />
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:text="@string/AppyStore_Version"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_16" />
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_back_RL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/child_dashboard_background"
+    android:paddingBottom="@dimen/login_padding_bottom"
+    android:paddingTop="@dimen/login_padding_top" >
+
+    <LinearLayout
+        android:id="@+id/login_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                android:contentDescription="@string/back"
+                android:src="@drawable/videos_subcategories_back_icon"
+                android:layout_alignParentTop="true" />
+
+            <!-- Header Text -->
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/login_header_txt_TV"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/login_header_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/h1" />
+
+        </RelativeLayout>
+
+
+        <!-- Enter Subscribed Mobile No -->
+
+        <RelativeLayout
+            android:id="@+id/login_enter_mobile_no_RL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_from_login_header_txt"
+            android:background="@drawable/subscribed_number_login_box" >
+
+            <com.appy.store.lite.customviews.CustomEditText
+                android:id="@+id/login_enter_mobile_no_ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:background="@null"
+                android:gravity="center"
+                android:maxLength="10"
+                android:hint="@string/login_enter_mobile_no_hint"
+                android:inputType="number"
+                android:padding="@dimen/dp_12"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="@dimen/h1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/single_line_error_msg_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/white_thirty_transparent_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/dp_5"
+                android:src="@drawable/alert_triangle_red"
+                android:contentDescription="@string/cd_alert_icon"
+                />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/login_unsubscribed_user_help_text_1"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/h1" />
+
+        </LinearLayout>
+
+        <!-- Enter Button -->
+
+        <RelativeLayout
+            android:id="@+id/login_enter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_five"
+            android:background="@drawable/subscribed_number_enter_button" >
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/login_enter_button_txt_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/login_enter_button_txt"
+                android:textColor="@color/enter_childs_area_btn_txt_clr"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_login_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_top_ll"
+        android:gravity="bottom"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center"
+            android:background="#4DFFFFFF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/dp_5"
+                android:src="@drawable/alert_triangle_red"
+                android:contentDescription="@string/cd_alert_icon"
+                />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/ctv_reg_with_num_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/login_unsubscribed_user_help_text_1"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/h1" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/container_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/subscribed_number_enter_button" >
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_try_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/try_again"
+                android:textColor="@color/enter_childs_area_btn_txt_clr"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/ctv_reg_with_num_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/or"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h1" />
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/tv_trial_register_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/login_unsubscribed_user_help_text_4"
+            android:textColor="@color/text_yellow_color"
+            android:textSize="@dimen/h1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_without_login_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/login_bottom_txt_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/without_login_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h1" />
+
+        <!-- </LinearLayout> -->
+
+        <com.appy.store.lite.progress.helper.ProgressBarCircularIndeterminate
+            android:id="@+id/progressBar_login"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:background="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

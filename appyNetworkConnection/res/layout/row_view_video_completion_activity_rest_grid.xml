@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/dashboard_gridItem_image_back_width"
+        android:layout_height="@dimen/dashboard_gridItem_image_back_height"
+        android:background="@drawable/border_image" >
+
+        <ImageView
+            android:id="@+id/activity_rest_gridItem_image_IV"
+            android:layout_width="@dimen/dashboard_gridItem_image_width"
+            android:layout_height="@dimen/dashboard_gridItem_image_height"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/activity_rest_gridItem_name_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_five"
+        android:layout_marginTop="@dimen/margin_five"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:textSize="@dimen/sp_14"
+        android:text="@string/games_name"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

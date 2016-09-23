@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/margin_five" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_30"
+            android:orientation="vertical" >
+
+            <!-- Notification 1 -->
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/notification_header1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/notification_header1_demo_txt"
+                android:textColor="@color/notification_head_txt_clr"
+                android:textSize="@dimen/sp_20" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/notification_txt1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/notification_txt1_demo_txt"
+                android:textColor="@color/notification_txt_clr"
+                android:textSize="@dimen/sp_20" />
+
+            <!-- Notifiacation 2 -->
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/notification_header2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/notification_header1_demo_txt"
+                android:textColor="@color/notification_head_txt_clr"
+                android:textSize="@dimen/sp_20" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal" >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/notification_txt2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:text="@string/notification_txt1_demo_txt"
+                    android:textColor="@color/notification_txt_clr"
+                    android:textSize="@dimen/sp_20" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10" >
+
+                    <ImageView
+                        android:id="@+id/notification_tick_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/notification_tick_icon" />
+
+                    <ImageView
+                        android:id="@+id/notification_close_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:background="@drawable/notification_close_icon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Notification 3 -->
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/notification_header3_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/notification_header1_demo_txt"
+                android:textColor="@color/notification_head_txt_clr"
+                android:textSize="@dimen/sp_20" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/notification_txt3_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/notification_txt1_demo_txt"
+                android:textColor="@color/notification_txt_clr"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

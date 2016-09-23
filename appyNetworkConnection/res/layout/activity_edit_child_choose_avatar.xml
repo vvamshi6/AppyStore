@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/child_dashboard_background" >
+
+    <include
+        android:id="@+id/select_avatar_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/appy_progressbar" />
+
+    <RelativeLayout
+        android:id="@+id/save_and_continue_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:background="@drawable/child_details_save_button"
+        android:padding="@dimen/dp_12" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/save_and_continue_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/register_save_and_continue"
+            android:textColor="@color/enter_childs_area_btn_txt_clr"
+            android:textSize="@dimen/h2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_padding_bottom"
+        android:layout_marginTop="@dimen/login_padding_top"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/avatar_head_txt_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_twenty"
+            android:layout_marginRight="@dimen/margin_twenty"
+            android:layout_weight="3"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:gravity="center_horizontal"
+            android:text="@string/avatar_head_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h1" />
+    </LinearLayout>
+    
+    <GridView
+        android:id="@+id/grid_avatars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/save_and_continue_BTN"
+        android:layout_below="@id/lin_top"
+        android:layout_marginLeft="@dimen/margin_twenty"
+        android:layout_marginRight="@dimen/margin_twenty"
+        android:horizontalSpacing="@dimen/dashboard_grid_horizontal_spacing"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dashboard_grid_horizontal_spacing" >
+    </GridView>
+
+</RelativeLayout>

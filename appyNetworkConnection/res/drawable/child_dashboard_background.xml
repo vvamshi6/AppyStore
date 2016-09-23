@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:dither="true"
+            android:src="@drawable/tile_blue_bg"
+            android:tileMode="repeat" >
+        </bitmap>
+    </item>
+    <item>
+        <bitmap
+            android:dither="true"
+            android:src="@drawable/gradient" >
+        </bitmap>
+    </item>
+
+</layer-list>

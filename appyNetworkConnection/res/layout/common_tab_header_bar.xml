@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+            <RelativeLayout
+                android:id="@+id/containerBackBtn"
+                android:layout_width="60dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:id="@+id/icon_header_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_videos_mother_icon_deselect" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/icon_videos_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/icon_videos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dashboard_videos" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/icon_videos_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_videos"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/tab_videos"
+                    android:textSize="@dimen/h3"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/icon_activities_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_activities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dashboard_activity" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/icon_activities_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_activities"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/tab_activity"
+                    android:textSize="@dimen/sp24"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/icon_games_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dashboard_games" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/icon_games_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_games"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/tab_games"
+                    android:textSize="@dimen/sp24"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/icon_histories_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/icon_histories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dashboard_history" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/icon_histories_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_histories"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/tab_history"
+                    android:textSize="@dimen/h3"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="0.2"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/search_icon_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_videos_search_icon_deselect" />
+
+            <ImageView
+                android:id="@+id/buyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_toRightOf="@+id/search_icon_IV"
+                android:src="@drawable/cart" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

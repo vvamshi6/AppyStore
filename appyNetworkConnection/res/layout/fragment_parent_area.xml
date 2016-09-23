@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/margin_five" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parent_area_header"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="vertical" >
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_26"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/parent_dashboard_header_txt"
+                android:textColor="@color/parents_dashboard_header_txt_colr"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/parent_area_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_15"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/dp_40" >
+            </GridView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

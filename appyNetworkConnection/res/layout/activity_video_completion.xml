@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/dp_5" >
+
+    <ImageView
+        android:id="@+id/video_completion_bg_IV"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/video_completion_transparent_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha=".60"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Top Bar -->
+
+        <RelativeLayout
+            android:id="@+id/video_completion_top_RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_five"
+            android:paddingLeft="@dimen/margin_fifteen"
+            android:paddingRight="@dimen/margin_fifteen"
+            android:paddingTop="@dimen/margin_five" >
+
+            <RelativeLayout
+                android:id="@+id/video_completion_back_RL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/margin_five" >
+
+                <ImageButton
+                    android:id="@+id/video_completion_back_arrow_IB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/videos_small_back_icon"
+                    android:contentDescription="@null" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/video_completion_back_txt_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_ten"
+                    android:layout_toRightOf="@+id/video_completion_back_arrow_IB"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:text="@string/video_completion_back_txt"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/video_completion_back_txt" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/video_completion_tick_image_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/video_completion_replay_RL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/video_completion_tick_image_IV"
+                android:clickable="true"
+                android:visibility="invisible" >
+
+                <com.appy.store.lite.customviews.CustomButton
+                    android:id="@+id/video_replay_icon_IB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/offline_save_button_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wishlist_subscribe_button_bg"
+                    android:padding="@dimen/margin_five"
+                    android:text="@string/save_to_offline"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_completion_top_RL"
+            android:paddingLeft="@dimen/margin_fifteen"
+            android:paddingRight="@dimen/dp_12" >
+
+            <!-- Bottom Section -->
+
+            <com.appy.store.lite.stickygrid.StickyGridHeadersGridView
+                android:id="@+id/grid_recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:horizontalSpacing="@dimen/dp_10"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:overScrollMode="never"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/scrollbar_custom"
+                android:scrollbars="vertical"
+                android:verticalSpacing="@dimen/dp_15" >
+            </com.appy.store.lite.stickygrid.StickyGridHeadersGridView>
+
+            <include
+                android:id="@+id/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                layout="@layout/appy_nodata_found" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/congratulation_txt_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/congratulation_txt"
+        android:visibility="gone" />
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/video_completion_win_txt_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/video_completion_win_txt"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/dp_10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_twentyfive"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_12"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/name_age_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:textColor="@color/common_header_txt_clr"
+                        android:textSize="@dimen/h1" />
+
+                    <ImageView
+                        android:id="@+id/profile_pic_img"
+                        android:layout_width="@dimen/avatar_height"
+                        android:layout_height="@dimen/avatar_height"
+                        android:layout_below="@+id/name_age_tv"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:contentDescription="@null" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/performance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profile_pic_img"
+                        android:layout_marginTop="@dimen/dp_24"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:textColor="@color/common_header_txt_clr"
+                        android:textSize="@dimen/h1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5" >
+
+                <com.appy.store.lite.customviews.ExpandableHeightListView
+                    android:id="@+id/list_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                </com.appy.store.lite.customviews.ExpandableHeightListView>
+
+                <include
+                    android:id="@+id/loading_txt_RL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    layout="@layout/appy_nodata_found" />
+
+                <include
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    layout="@layout/appy_progressbar"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical" >
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tv_son"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:padding="@dimen/dp_5"
+        android:text="Son"
+        android:textColor="@color/hint_popup_txt_clr"
+        android:textSize="@dimen/sp_20" />
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tv_daughter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:padding="@dimen/dp_5"
+        android:text="Daughter"
+        android:textColor="@color/hint_popup_txt_clr"
+        android:textSize="@dimen/sp_20" />
+
+</LinearLayout>

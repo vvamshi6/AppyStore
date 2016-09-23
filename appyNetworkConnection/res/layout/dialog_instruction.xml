@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hint_dialog_back_RL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/dp_20" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_twentyfive"
+        android:background="@drawable/wrong_answer_help_you_box" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_twentyfive" >
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/help_you_txt_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/hint_help_you_txt"
+                android:textColor="@color/hint_dialog_txt_clr"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/hint_dialog_hint_txt_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_five"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/hint_dialog_hint_demo_txt"
+                android:textColor="@color/hint_dialog_txt_clr"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+         />
+    <!--android:background="@drawable/wrong_answer_teddy"-->
+
+</RelativeLayout>

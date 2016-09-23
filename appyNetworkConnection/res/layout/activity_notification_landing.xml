@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <include
+        android:id="@+id/video_details_header"
+        layout="@layout/common_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+
+    <LinearLayout
+        android:id="@+id/containerParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/video_details_header"
+        android:background="@drawable/rounded_bg_otp_dialog"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rlContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+           >
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+

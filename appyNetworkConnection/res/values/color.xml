@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_theme_color">#47adde</color>
+    <color name="button_back_color">#f1cc1c</color>
+    <color name="text_yellow_color">#e1e260</color>
+    <color name="splash_color">#008fb2</color>
+    <color name="splash_text_color">#2ad8db</color>
+
+    <!-- Common Color -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="common_header_txt_clr">#525252</color>
+
+    <!-- Activity Rate App Screen -->
+    <color name="rating_app_line">#777777</color>
+
+    <!-- Common Title Bar Screen -->
+    <color name="title_bar_background">#57abd7</color>
+
+    <!-- Help Screen -->
+    <color name="help_text2">#56aad8</color>
+
+    <!-- Drawable -->
+    <color name="btn_focus_back">#f5951c</color>
+    <color name="child_circle_stroke">#555555</color>
+    <color name="editright_drawable_back">#83c5d5</color>
+    <color name="plan_item_stroke">#898989</color>
+    <color name="subsciption_edit_storke">#00aeef</color>
+
+    <!-- Parent Wishlist -->
+    <color name="wishlist_subscribe_btn_bg">#57abd7</color>
+    <color name="blue">#00c2c0</color>
+    <color name="red">#ff3541</color>
+    <color name="text_color_dark_gray">#6f6f6f</color>
+    <color name="text_color_light_gray">#8a8a8a</color>
+
+    <!-- Register Avatar Screen -->
+    <color name="enter_childs_area_btn_txt_clr">#1f4452</color>
+
+    <!-- Dashboard -->
+    <color name="dashboard_tab_name_selected">#f6d914</color>
+
+    <!-- Parent's Dashboard -->
+    <color name="parents_dashboard_header_txt_colr">#595959</color>
+    <color name="parents_dashbrd_grid_item_txt_clr">#676767</color>
+    <color name="parents_dashbrd_grid_item_unselected_txt_clr">#b4b4b4</color>
+
+    <!-- Parent's Wishlist -->
+    <color name="parents_wishlist_grid_item_txt_colr">#393939</color>
+
+    <!-- Parent's Notification -->
+    <color name="notification_head_txt_clr">#525252</color>
+    <color name="notification_txt_clr">#8d8d8d</color>
+
+    <!-- Hint Screen -->
+    <color name="hint_dialog_txt_clr">#6b3931</color>
+    <color name="hint_popup_txt_clr">#544a19</color>
+
+    <!-- Subscription Screen -->
+    <color name="subscription_edit_phone_no_txt_clr">#747474</color>
+
+    <!-- Parenting Videos Screen -->
+    <color name="parenting_videos_category_txt_clr">#b4b4b4</color>
+    <color name="parenting_videos_category_item_txt_clr">#525252</color>
+    <color name="disabled_color">#44000000</color>
+    <color name="error_color">#E7492E</color>
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+    <color name="btn_context_menu_text_red">#ffff0000</color>
+    <color name="custom_progress_background">#FFFFFF</color>
+    <color name="custom_progress_orange_progress">#C97E7E</color>
+
+    <!-- Game Details Screen -->
+    <color name="game_details_header_clr">#373737</color>
+    <color name="game_details_txt_clr">#3a3a3a</color>
+    <color name="game_details_see_all_txt_clr">#384c65</color>
+
+    <!-- Recommendation Screen -->
+    <color name="recommendation_see_all_bgclr">#f2cc1a</color>
+
+    <!-- Tool Tips Screen -->
+    <color name="tool_tips_msg2_clr">#f2b71a</color>
+
+    <!-- Game Details -->
+    <color name="btn_disabled_clr">#6F7575</color>
+
+    <!-- No Internet Connection Dialog -->
+    <color name="dialog_top_bar_color">#008fb2</color>
+    
+    <!-- Custom Progress Loader Color -->
+    <color name="progress_loading_color">#f6d914</color>
+    <color name="default_shadow_color">#AA000000</color>
+    <color name="progress_loading_color_blue">#56abd7</color>
+
+    <color name="progress_end_color">#ff1997e1</color>
+    <color name="progress_start_color">#56abd7</color>
+
+    <color name="purple">#6600cc</color>
+    <color name="dialog_trial_subscription_yellow">#f2cc1a</color>
+    <color name="light_grey">#ffd1d2d4</color>
+    <color name="white_thirty_transparent_bg">#4DFFFFFF</color>
+
+    <color name="translucent_black">#90000000</color>
+    <color name="color_blue_selector">#00688B</color>
+
+    <color name="light_grey_start">#fffafafa</color>
+    <color name="light_grey_end">#ffbcbdbe</color>
+
+    <color name="circular_page_indicator_selected">#ff1997e1</color>
+    <color name="circular_page_indicator">#000203</color>
+
+    <color name="notification_vp_bg">#ffffff</color>
+
+</resources>

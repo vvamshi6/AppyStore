@@ -1,0 +1,46 @@
+public static ArrayList<NameValuePair> getHeaderList() {
+        ArrayList<NameValuePair> pairs = new ArrayList<NameValuePair>();
+        pairs.add(new BasicNameValuePair("Content-Type", ApiConstants.CONTENT_TYPE));
+        pairs.add(new BasicNameValuePair(X_APPY_IMEI, ApplicationClassAppystore.getSharedPreference().getDevice_ID()));
+        pairs.add(new BasicNameValuePair(X_APPY_PCP_ID, ApplicationClassAppystore.getSharedPreference().getPcp_ID()));
+        pairs.add(new BasicNameValuePair(X_APPY_CAMPAIGN_ID, ApplicationClassAppystore.getSharedPreference().getCampaign_ID()));
+        pairs.add(new BasicNameValuePair(X_APPY_USERID, ApplicationClassAppystore.getSharedPreference().getUser_ID()));
+        pairs.add(new BasicNameValuePair(X_APPY_UTYPE, ApplicationClassAppystore.getSharedPreference().getU_Type()));
+        // pairs.add(new BasicNameValuePair(X_APPY_PAGEID, "100"));
+        pairs.add(new BasicNameValuePair(X_APPY_UserAgent, ApplicationClassAppystore.getSharedPreference().getUser_Agent()));
+        pairs.add(new BasicNameValuePair(X_APPY_DEVICE_WIDTH, ApplicationClassAppystore.getSharedPreference().getDevice_Width()));
+        pairs.add(new BasicNameValuePair(X_APPY_DEVICE_HEIGHT, ApplicationClassAppystore.getSharedPreference().getDevice_Height()));
+        pairs.add(new BasicNameValuePair(X_APPY_ANDROID_ID, ApplicationClassAppystore.getSharedPreference().getAndroid_ID()));
+        pairs.add(new BasicNameValuePair(X_APPY_API_KEY, ApiConstants.APIKEY));
+        pairs.add(new BasicNameValuePair(X_APPY_CHILD_ID, ApplicationClassAppystore.getSharedPreference().getChildId()));
+        pairs.add(new BasicNameValuePair(ACCEPT, Value_Accept));
+        pairs.add(new BasicNameValuePair(ACCEPT_ENCODING, Value_Accept_Encoding));
+        pairs.add(new BasicNameValuePair(ACCEPT_LANGUAGE, Value_Accept_Language));
+        pairs.add(new BasicNameValuePair(X_APPY_CONN_TYPE, ApplicationClassAppystore.getSharedPreference().getConnType()));
+        pairs.add(new BasicNameValuePair(X_APPY_TINFO, ApplicationClassAppystore.getSharedPreference().getTinfo()));
+        pairs.add(new BasicNameValuePair(X_APPY_VISITOR_ID, ApplicationClassAppystore.getSharedPreference().getVisitorId()));
+        pairs.add(new BasicNameValuePair(X_APPY_OST, ApplicationClassAppystore.getSharedPreference().getOst()));
+        pairs.add(new BasicNameValuePair(X_APPY_USV, ApplicationClassAppystore.getSharedPreference().getUsv()));
+        pairs.add(new BasicNameValuePair(X_APPY_REG_KEY, ApplicationClassAppystore.getSharedPreference().getX_APPY_REG_KEY()));
+        pairs.add(new BasicNameValuePair(X_APPY_VERSION, ApplicationClassAppystore.getSharedPreference().getAppVersion()));//versionCode
+        pairs.add(new BasicNameValuePair(X_APPY_VERSION_NAME, ApplicationClassAppystore.getSharedPreference().getAppVersionName()));
+        pairs.add(new BasicNameValuePair(X_APPY_TTR, ApplicationClassAppystore.getSharedPreference().getTimeToRefresh()));
+        pairs.add(new BasicNameValuePair(X_APPY_SESSION_ID, ApplicationClassAppystore.getSharedPreference().getSessionId()));
+        pairs.add(new BasicNameValuePair(X_APPY_APP_TYPE, APPY_LITE));
+        pairs.add(new BasicNameValuePair(X_APPY_IS_NEW_USER, ApplicationClassAppystore.getSharedPreference().getAppyNewUser()));
+        pairs.add(new BasicNameValuePair(X_APPY_MSISDN, ApplicationClassAppystore.getSharedPreference().getAppyMsisdn()));
+        pairs.add(new BasicNameValuePair(X_APPY_SUB_KEY, ApplicationClassAppystore.getSharedPreference().getAppySubKey()));
+        pairs.add(new BasicNameValuePair(X_APPY_OS, "android"));
+        pairs.add(new BasicNameValuePair(X_APPY_OS_VERSION, android.os.Build.VERSION.RELEASE));
+        pairs.add(new BasicNameValuePair(X_APPY_GOOGLE_CAMPAIGN_ID, ApplicationClassAppystore.getSharedPreference().getUtmCampaign()));
+
+        return pairs;
+    }
+
+
+
+
+
+	Example Headers LOG:
+
+[Content-Type=application/x-www-form-urlencoded, X_APPY_IMEI=353368070301951, X_APPY_PCP_ID=999, X_APPY_CAMPAIGN_ID=8700441600, X_APPY_USERID=290903782, X_APPY_UTYPE=O, X_APPY_UserAgent=Mozilla/5.0 (Linux; Android 5.0.2; Panasonic ELUGA Switch Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36, X_APPY_DEVICE_WIDTH=1794, X_APPY_DEVICE_HEIGHT=1080, X_APPY_ANDROID_ID=97493b2405dcfbcf, X_APPY_API_KEY=gh610rt23eqwpll, X_APPY_CHILD_ID=9178, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=, Accept-Language=en-US,en;q=0.5, X_APPY_CONN_TYPE=W, X_APPY_TINFO=, X_APPY_VISITOR_ID=0f7a743d9978a632ed4db6005b5bf75b, X_APPY_OST=, X_APPY_USV=, X_APPY_REG_KEY=APA91bE4OxGaKF11ccKoyn7KP6F5L-nGcB98hfyHtriuET0QYQJc-D05lc89ca289pwJm3EoOs6kXTpHfLyaD3IamyPisbIPtgIPTv_2qdFIk9KW4BU4V79VqkCx2qib6KwkYgqqRex-, X_APPY_VERSION=7, X_APPY_VERSION_NAME=INSTANT_RUN, X_APPY_TTR=10800000, X_APPY_SESSION_ID=16ffdb528d3cf24c62fe427d07937b32, X_APPY_APP_TYPE=lite, X_APPY_IS_NEW_USER=N, X_APPY_MSISDN=, X_APPY_SUB_KEY=, X_APPY_OS=android, X_APPY_OS_VERSION=5.0.2, X_APPY_GOOGLE_CAMPAIGN_ID=]

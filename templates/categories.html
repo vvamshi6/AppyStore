@@ -1,0 +1,26 @@
+<div carousel3d
+    ng-model="slides" options = "options">
+    <div carousel3d-slide ng-repeat="slide in slides">
+        <figure>
+            <img ng-src="{{slide.src}}" alt=""/>
+            <a ui-sref="videos({pcatid:slide.pcatid,catid:slide.catid})">
+            <figcaption ng-bind="slide.caption"></figcaption>
+          </a>
+        </figure>
+
+    </div>
+</div>
+
+<!-- <carousel3d
+            ng-model="slides"
+            options="options"
+        <carousel3d-slide ng-repeat="slide in app.slides">
+            <figure>
+                <img ng-src="{{slide.src}}" alt=""/>
+                <figcaption ng-bind="slide.caption"></figcaption>
+            </figure>
+        </carousel3d-slide>
+    </carousel3d> -->
+<!-- <div ng-repeat = "x in greeting">
+<img ng-src = '{{x.image_path["50x50"]}}'>
+</div> -->

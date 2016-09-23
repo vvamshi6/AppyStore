@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/dp_25">
+
+    <!--Body Content Linear-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <!--Rate us Header Relative-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/rate_us_header_icon_width"
+                    android:layout_height="@dimen/rate_us_header_icon_height"
+                    android:contentDescription="@null"
+                    android:src="@drawable/loading_img" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/rate_us_header"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Experience Text-->
+        <com.appy.store.lite.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/rate_us_exp_txt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/h2"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+        <!--Rate bar Image-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:contentDescription="@null"
+            android:src="@drawable/rating_icon_select" />
+
+        <!--Rate us text-->
+        <com.appy.store.lite.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/rate_us_gplay_txt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/h2"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+        <!--Love it & Not happy layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_25"
+            android:gravity="center_horizontal">
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_not_happy"
+                android:layout_width="@dimen/rate_us_dialog_btn_width"
+                android:layout_height="@dimen/rate_us_dialog_btn_height"
+                android:background="@drawable/bg_save_to_offline_button"
+                android:gravity="center"
+                android:text="@string/rate_us_nhappy_txt"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h3"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_love_it"
+                android:layout_width="@dimen/rate_us_dialog_btn_width"
+                android:layout_height="@dimen/rate_us_dialog_btn_height"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:background="@drawable/bg_love_it_btn"
+                android:gravity="center"
+                android:text="@string/rate_us_loveit_txt"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h3"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Cross Button-->
+    <ImageButton
+        android:id="@+id/ibtn_rateUs_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:src="@drawable/ic_action" />
+
+</RelativeLayout>

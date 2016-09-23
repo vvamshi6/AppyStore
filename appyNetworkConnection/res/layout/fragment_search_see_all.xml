@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/child_dashboard_background"
+    android:paddingBottom="@dimen/dp_10">
+
+    <RelativeLayout
+        android:id="@+id/search_see_all_top"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5">
+
+        <RelativeLayout
+            android:id="@+id/containerBackBtn"
+            android:layout_width="60dp"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/icon_back_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/videos_subcategories_back_icon" />
+
+        </RelativeLayout>
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/category_name_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/dashboard_activity_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_see_all_top"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="5dp"
+        android:horizontalSpacing="@dimen/dashboard_grid_horizontal_spacing"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbarThumbVertical="@drawable/scrollbar_custom"
+        android:verticalSpacing="@dimen/dashboard_grid_vertical_spacing"></GridView>
+
+    <include
+        android:id="@+id/progressbar"
+        layout="@layout/appy_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

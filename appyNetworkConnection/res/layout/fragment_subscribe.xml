@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parent_dashboard_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_30"
+            android:paddingBottom="@dimen/dp_10">
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_plans_subscribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_25"
+                android:text="@string/subscription_plan_header_text"
+                android:textColor="@color/common_header_txt_clr"
+                android:textSize="@dimen/h2"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            <!--Radio Group -  List Child Age-->
+            <RadioGroup
+                android:id="@+id/radioGroup_childAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_plans_subscribe"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBtn_age2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscription_age_2_3_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/h2"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <RadioButton
+                    android:id="@+id/radioBtn_age3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscription_age_3_4_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/h2"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <RadioButton
+                    android:id="@+id/radioBtn_age4_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscription_age_4_5_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/h2"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <RadioButton
+                    android:id="@+id/radioBtn_age5_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscription_age_5_6_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/h2"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </RadioGroup>
+
+            <com.appy.store.lite.customviews.ExpandableHeightGridView
+                android:id="@+id/subscription_plans_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroup_childAge"
+                android:layout_marginTop="@dimen/dp_15"
+                android:horizontalSpacing="@dimen/margin_fifteen"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/margin_ten"></com.appy.store.lite.customviews.ExpandableHeightGridView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:orientation="vertical">
+
+         <com.appy.store.lite.customviews.CustomButton
+             android:id="@+id/btn_gplay"
+             android:layout_width="wrap_content"
+             android:layout_height="@dimen/subscription_done_btn_height"
+             android:layout_alignParentBottom="true"
+             android:background="@drawable/wishlist_details_item_subscribe_btn_bg"
+             android:gravity="center"
+             android:paddingBottom="10dp"
+             android:paddingLeft="19dp"
+             android:paddingRight="19dp"
+             android:paddingTop="10dp"
+             android:text="Google Payment"
+             android:textColor="@android:color/white"
+             android:textSize="@dimen/h3"
+             android:visibility="visible"
+             AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+         <com.appy.store.lite.customviews.CustomButton
+             android:id="@+id/btn_ccavnue"
+             android:layout_width="wrap_content"
+             android:layout_height="@dimen/subscription_done_btn_height"
+             android:layout_alignParentBottom="true"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/wishlist_details_item_subscribe_btn_bg"
+             android:gravity="center"
+             android:padding="10dp"
+             android:text="CCAvenue Payment"
+             android:textColor="@android:color/white"
+             android:textSize="@dimen/h3"
+             android:visibility="visible"
+             AppystoreLite:fontName="@string/font_name_passing_notes" />
+     </LinearLayout>-->
+</RelativeLayout>

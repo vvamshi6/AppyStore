@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/tv_dialog_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:background="@color/dialog_top_bar_color"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="No Internet"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/tv_dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:gravity="center"
+            android:padding="@dimen/dp_12"
+            android:text="Please check internet connection"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/dialog_top_bar_color" />
+
+        <com.appy.store.lite.ripple.LayoutRipple
+            android:id="@+id/rl_dialog_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_btn_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:padding="@dimen/dp_12"
+                    android:text="Try Later"
+                    android:textColor="@color/app_theme_color"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </com.appy.store.lite.ripple.LayoutRipple>
+    </LinearLayout>
+
+</LinearLayout>

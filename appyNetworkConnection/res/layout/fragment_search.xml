@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autolabel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/child_dashboard_background"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingTop="5dp">
+
+    <!-- Seacrh Top Bar -->
+
+    <RelativeLayout
+        android:id="@+id/seacrh_top_RL"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        >
+        <RelativeLayout
+            android:id="@+id/containerBackBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/search_back_icon_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/videos_subcategories_back_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seacrh_edit_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/search_cancel_FL"
+            android:layout_toRightOf="@+id/containerBackBtn">
+
+            <com.appy.store.lite.customviews.CustomEditText
+                android:id="@+id/search_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_2"
+                android:background="@android:color/transparent"
+                android:hint="@string/search_hint_txt"
+                android:imeOptions="actionSearch"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="@dimen/h2"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/search_edit_text_bar" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/search_cancel_FL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/search_icon_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_videos_search_icon_deselect" />
+
+            <ImageView
+                android:id="@+id/search_cancel_icon_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/close"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- Popular search tags view -->
+
+    <RelativeLayout
+        android:id="@+id/popular_search_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seacrh_top_RL"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/popular_search_txt_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular_search_header_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h2"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+        <com.dpizarro.autolabel.library.AutoLabelUI
+            android:id="@+id/search_popular_tags_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popular_search_txt_TV"
+            android:layout_marginTop="@dimen/dp_8"></com.dpizarro.autolabel.library.AutoLabelUI>
+
+        <com.appy.store.lite.progress.helper.ProgressBarCircularIndeterminate
+            android:id="@+id/popular_search_pbar"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_below="@+id/popular_search_txt_TV"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/dp_20"
+            android:visibility="gone"></com.appy.store.lite.progress.helper.ProgressBarCircularIndeterminate>
+    </RelativeLayout>
+    <!-- Seacrh Result Grid -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/popular_search_LL"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_5">
+
+        <ListView
+            android:id="@+id/search_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarThumbVertical="@drawable/scrollbar_custom"></ListView>
+
+        <include
+            android:id="@+id/no_data"
+            layout="@layout/appy_nodata_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <include
+            android:id="@+id/progressbar"
+            layout="@layout/appy_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

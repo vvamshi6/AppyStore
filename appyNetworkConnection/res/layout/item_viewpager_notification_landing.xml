@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <!--Title-->
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Title"
+        android:maxLines="2"
+        android:paddingTop="@dimen/margin_five"
+        android:paddingBottom="@dimen/margin_five"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/h1"
+        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+    <!--Description-->
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tvNotificationDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h3_dialog"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+         />
+
+    <ImageView
+        android:id="@+id/imgNotification"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:visibility="visible"
+        android:src="@drawable/otp_dialog_image"
+        android:scaleType="centerInside"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:contentDescription="@string/activity_login"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AppyStore</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles/myStyles.css" media="screen" title="no title" charset="utf-8">
+<link href="styles/carousel-3d.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class = 'img-responsive' background = 'BG-min.png'>
+<nav>
+  <ul>
+    <img class = "float:left" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_7_menu_on-min.png' height="50" width="50">
+    <img class = "float_center" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_5_history_on-min.png' height="50" width="50">
+    <img style="float:right" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_8_kart_on-min.png' height="50" width="50">
+    <img style="float:right" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_6_search_on-min.png' height="50" width="50">
+  </ul>
+<div id="myModal" class="modal">
+  <div class="modal-header">
+    <div class="modal-content">
+      <h3><center>Please enter your registered mobile number</center></h3>
+      <center><input type = 'text' placeholder = 'Enter your mobile number'></center>
+      <center><input type = 'submit' value = "Login"></center>
+      <center><p data-dismiss = "modal" aria-hidden="true" style="cursor:pointer"><b>Continue without Login</b></p></center>
+    <!-- <input type="submit" data-dismiss="modal" value = "skip"aria-hidden="true"> -->
+    </div>
+  </div>
+<div>
+</nav>
+<div ng-app = 'appyStore'>
+  <ui-view></ui-view>
+</div>
+</body>
+<script src='app.js'></script>
+<script src='controllers/categoryCtrl.js'></script>
+<script src = 'controllers/videoCtrl.js'></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $("#myModal").modal('show');
+ });
+ var span = document.getElementsByClassName("close")[0];
+</script>
+<script src = 'controllers/carousel-3d.js'></script>
+<script src = 'controllers/angular-swipe.js'></script>
+</html>

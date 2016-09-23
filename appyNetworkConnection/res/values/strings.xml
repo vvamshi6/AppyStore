@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Appystore</string>
+
+    <!-- DashBoard Activity Fragment -->
+    <string name="dashboard_activity_redayToPlayTxt">Ready to Play</string>
+    <string name="dashboard_activity_moreTxt">There\'s More</string>
+    <string name="games_name">Demo</string>
+
+    <!-- AppyStore Version Control -->
+
+    <string name="AppyStore_Version">Version: 1.0.4</string>
+
+    <!-- Dashboard Videos Fragment -->
+    <string name="dashboard_video_category">English</string>
+
+    <!-- Dashboard Videos Sub Fragment -->
+    <string name="dashboard_video__sub_category_header_txt">Alphabets (44 Videos)</string>
+
+    <!-- Dashboard Activity Fragment -->
+    <string name="dasgboard_activity_category">Maths</string>
+
+    <!-- Dashboard History Fragment -->
+    <string name="history_video_count">54 Videos</string>
+    <string name="history_video_length_txt">2 min</string>
+    <string name="locked_txt">Locked</string>
+    <string name="parents_videos_see_all_btn_txt">See All</string>
+    <string name="history_video_downloaded_txt">Offline</string>
+
+    <!-- Login Screen -->
+    <string name="login_header_txt">Welcome to Appystore</string>
+    <string name="login_enter_mobile_no_hint">Log In with your subscribed mobile number</string>
+    <string name="without_login_txt">Continue without Log In</string>
+    <string name="login_enter_button_txt">Enter</string>
+    <string name="login_enter_button_loading_txt">Loading</string>
+    <string name="login_unsubscribed_user_help_text_1">We are unable to recognize your number!</string>
+    <string name="try_again">Try Again</string>
+    <string name="or">OR</string>
+    <string name="login_unsubscribed_user_help_text_4">Register with this number to gain %1$s day free access</string>
+
+    <!-- Register Screen -->
+    <string name="txt_my">My</string>
+    <string name="txt_named">named</string>
+    <string name="txt_children_name_hint">Child\'s Name</string>
+    <string name="register_save_and_continue">Save and Continue</string>
+    <string name="txt_child_details_line2">is a champion born on</string>
+    <string name="txt_children_dob_hint">23rd September 2013</string>
+    <string name="txt_son">son/daughter</string>
+    <string name="txt_slash">\u00A0/\u00A0</string>
+    <string name="txt_daughter">Daughter</string>
+    <string name="son_txt">Son</string>
+    <string name="txt_login">Login</string>
+
+    <!-- Child Avatar Screen -->
+    <string name="avatar_head_txt">Choose an avatar for your champ</string>
+    <string name="avatar_add_another_child_txt">Add Another Child</string>
+    <string name="avatar_enter_childs_area_txt">Enter Child\'s Area</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_subscribe">SubscribeActivity</string>
+    <string name="title_activity_content_access">ContentAccessActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_subscriptions">SubscriptionsActivity</string>
+
+    <!-- child detail activity -->
+    <string name="childdetail_choosechild">Choose a Child</string>
+    <string name="childdetail_childiv_contentdes">child image</string>
+
+    <!-- content access activity -->
+    <string name="childaccess_choose_learning">Choose Learning Area</string>
+    <string name="childaccess_childiv_contentdes">child image</string>
+    <string name="childaccess_checkbox_childinclude">Include Categories for 5 Years Old</string>
+    <string name="childaccess_math">Math</string>
+    <string name="childaccess_algebra">Algebra</string>
+    <string name="childaccess_numbers">Number</string>
+    <string name="childaccess_addition">Addition</string>
+    <string name="childaccess_includecategory_txt">Include Categories for 5 Years Old</string>
+    <string name="content_access_save_btn_txt">Save</string>
+    <string name="content_access_child_name_demo_txt">Aayushi Goyal</string>
+    <string name="txt_incl_cat_for">Include Categories for</string>
+    <string name="txt_yrs_old">Years Old</string>
+    <string name="edit_child_details_txt">Edit Details</string>
+
+    <!-- Dashboard Tab Names -->
+    <string name="tab_videos">Videos</string>
+    <string name="tab_activity">Activity</string>
+    <string name="tab_games">Games</string>
+    <string name="tab_history">History</string>
+    <string name="title_activity_virtual">VirtualActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_video_play">VideoPlayActivity</string>
+    <string name="toolbar_buy_btn">Buy</string>
+
+    <!-- Video Paused Screen -->
+    <string name="exit_video_txt">Exit the video</string>
+    <string name="return_to_video_txt">Return to video</string>
+
+    <!-- Video Completion Screen -->
+    <string name="video_completion_back_txt">Back</string>
+    <string name="video_completion_exit_txt">Exit the video</string>
+    <string name="congratulation_txt">Congratulations !</string>
+    <string name="video_replay_txt">Replay</string>
+    <string name="video_completion_win_txt">You have won yourself a</string>
+    <string name="video_completion_bottom_part_header">Watch More Videos</string>
+
+    <!-- Video Play Screen -->
+    <string name="video_total_length_txt">00:00:00</string>
+    <string name="video_played_length_txt">00:00:00</string>
+
+    <!-- chart screen -->
+
+    <string name="name_age_text">Aayan Goyal - 4 years</string>
+    <string name="performance_text">Aayan\'s Performance</string>
+    <string name="statistic_1">Statistic 1</string>
+    <string name="statistic_2">Statistic 2</string>
+    <string name="performance_btn_text">Praise Aayan\'s Performance</string>
+
+    <!-- Parent Wishlist Screen -->
+    <string name="wishlist_subscribe_btn_txt">Subscribe</string>
+    <string name="wishlist_item_demo_txt">Angry Birds Space II</string>
+    <string name="wishlist_item_downloads_count_demo_txt">5,600 Downloads</string>
+    <string name="wishlist_item_price_demo_txt">Rs 200</string>
+
+    <!-- Parents Blog Screen -->
+    <string name="parents_blog_head_demo_txt">Language &amp; Communication</string>
+    <string name="parents_blog_item_type_demo_txt">An Attitude of Gratitude</string>
+    <string name="parents_blog_item_post_time_demo_txt">2 days ago</string>
+
+    <!-- Font String -->
+    <string name="font_name_passing_notes">passing_notes.ttf</string>
+    <string name="font_name_shadows_into_light">shadows_into_light.ttf</string>
+
+    <!-- Wishlist Item Details -->
+    <string name="wishlist_details_item_name_demo_txt">Angry Birds Space II</string>
+    <string name="wishlist_details_item_downloads_count_demo_txt">5,600 Downloads</string>
+    <string name="wishlist_details_age_demo_txt">Age 3&#8211;6</string>
+    <string name="wishlist_details_item_price_demo_txt">Rs. 200</string>
+    <string name="wishlist_details_item_info_demo_txt">In publishing and graphic design, lorem ipsum is a filler text commonly used to demonstrate the graphic elements of a document or visual presentation. Replacing meaningful content with placeholder text allows viewers to focus on graphic aspects such as font, typography, and</string>
+    <string name="wishlist_details_item_back_txt">Back to Games Section</string>
+
+    <!-- Parent's Dashboard -->
+    <string name="parent_dashboard_header_txt">Parent\'s Area</string>
+    <string name="no_email_client_found_prompt">There are no email clients installed.</string>
+
+    <!-- Common Header -->
+    <string name="header_contact_us_txt">Contact Us</string>
+
+    <!-- Notification Screen -->
+    <string name="notification_header1_demo_txt">Lorem Ipsum</string>
+    <string name="notification_txt1_demo_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </string>
+
+    <!-- Subscription Screen -->
+    <string name="subscribtion_done_btn_txt">Subscibe</string>
+    <string name="subscription_plan_txt">Rs 150/pm</string>
+    <string name="subscription_plan_body_txt">- Unlimited access to Appystore</string>
+    <string name="subscription_available_plan_txt">Available Plans</string>
+    <string name="subscription_plan_header_text">Please select for which age group yo need FREE Worksheets</string>
+    <string name="subscription_age_2_3_txt">2-3 years</string>
+    <string name="subscription_age_3_4_txt">3-4 years</string>
+    <string name="subscription_age_4_5_txt">4-5 years</string>
+    <string name="subscription_age_5_6_txt">5-6 years</string>
+    <string name="name_txt">Name</string>
+    <string name="address_txt">Address</string>
+    <string name="mob_txt">Mob No.</string>
+    <string name="city_txt">City</string>
+    <string name="pincode_txt">Pincode</string>
+    <string name="state_txt">State</string>
+    <string name="billng_shppng_dfrnt_txt">My billing address is different from shipping address</string>
+    <string name="continue_btn_txt">Continue</string>
+    <string name="payment_congrats_txt">Congratulation Mario Rues! Your sunscription for 1 month is confirmed! Now let Thomas enjoy unlimited content!</string>
+    <string name="watch_videos_txt">Watch Videos</string>
+    <string name="choose_payment_optn_txt">Choose Payment Option</string>
+
+
+    <!-- Help & FAQ Screen -->
+    <string name="faq_txt">FAQs</string>
+    <string name="faq_demo_txt1">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</string>
+    <string name="faq_demo_txt2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  , consequat ?</string>
+    <string name="faq_demo_txt3">Lorem ipsum dolor sit amet, consectetur ?</string>
+
+    <!-- Rate App Scrren -->
+    <string name="rate_app_submit_btn_txt">Submit</string>
+    <string name="rate_app_rate_us_txt">Rate Us</string>
+    <string name="rate_app_write_feedback_txt">Write a Feedback</string>
+
+    <!-- Hint Dialog -->
+    <string name="hint_help_you_txt">Let me help you</string>
+    <string name="hint_dialog_hint_demo_txt">Count to 1 in one hand and 2 in other</string>
+
+    <!-- Choose Answer -->
+    <string name="choose_answer_header_txt">Choose the correct answer from the options</string>
+
+    <!-- Subscription Validation Screen -->
+    <string name="already_subscribed_txt">Allready Subscribed?</string>
+    <string name="subscribe_header_txt">Enjoy unlimited created content for your kids</string>
+    <string name="subscription_mobile_number_hint">Please enter your ten digit mobile number</string>
+    <string name="new_subscriber_txt">New Subscriber?</string>
+    <string name="new_subscription_content_txt">Enjoy unlimited supply of useful and curated content for your kids</string>
+
+    <!-- Number Addition Screen -->
+    <string name="activity_number_add_head_txt">Choose the correct answer from the options</string>
+    <string name="txt_qns_mark">\?</string>
+
+    <!-- Custom Toast Text -->
+    <string name="move_to_parent_area_txt">Tap again to move to Parent Section</string>
+    <string name="exit_from_app_txt">Press Again To Exit</string>
+    <string name="invalid_credential">Invalid credential</string>
+    <string name="connection_time_out">Please check your network connectivity</string>
+    <string name="check_network_connectivity">Please check your network connectivity</string>
+    <string name="enter_mobile_no_prompt">Please enter a valid mobile number.</string>
+    <string name="child_dob_prompt">Please Enter Your Child\'s Date of Birth</string>
+    <string name="child_name_prompt">Please Enter Your Child\'s Name</string>
+    <string name="child_type_prompt">Please Select Your Child\'s Gender</string>
+    <string name="register_successfully_toast">You have registered successfully.</string>
+    <string name="select_avatar_prompt">Please Select an Avatar for Your Child</string>
+    <string name="child_year_prompt">Your Child\'s Age Must be 1 year &amp; 6 months - 8 Years</string>
+    <string name="no_video_prompt">Sorry! No Videos found</string>
+    <string name="game_update_not_found">Sorry.! No Update Found</string>
+    <string name="game_package_not_found">Game not found</string>
+    <string name="login_with_invalid_phno_toast">Sorry.! You have no active child. Please register a child</string>
+    <string name="paid_item_toast">Sorry.! The Content is Paid</string>
+    <string name="under_development_txt">Under Development</string>
+    <string name="no_contents_available_toast">This category is not applicable to the age of your child</string>
+    <string name="no_recommendation_toast">No Relevant Recommendation Found</string>
+    <string name="loading_recommendation_txt">Loading Recommendation...</string>
+    <string name="play_error_message">Unable to play the video</string>
+    <string name="valid_email_error_">Please enter valid email</string>
+    <string name="blank_email_error">Please enter your email</string>
+    <string name="blank_feedback_error">Please give some feedback</string>
+    <!-- Spinner Item -->
+    <string name="gender_prompt">Son / Daughter</string>
+
+    <string-array name="gender">
+        <item>Son</item>
+        <item>Daughter</item>
+    </string-array>
+
+    <!-- Urls -->
+    <string name="subscription_web_url">http://www.appystore.in/paymentapp/web/</string>
+    <string name="subscription_payment_test_web_url">http://beta.appystore.in/paymentapp/web/</string>
+    <!--<string name="subscription_payment_test_web_url">http://test.appystore.in/paymentapp/web/</string>-->
+    <string name="base_url_get_msisdn">http://www.appystore.in/appy_app/appyApi_handler.php?</string>
+
+    <!-- Development Url -->
+    <!--<string name="base_url">http://stg.appystore.in/appy_app/appyApi_handler.php?</string>
+    <string name="base_url_cat">http://stg.appystore.in/appy_app/appyApi_handler.php?</string>
+    <string name="base_url_avatar">http://stg.appystore.in/appy_app/appyApi_handler.php?</string>-->
+
+
+    <!-- Beta Url -->
+    <!--   <string name="base_url">http://beta.appystore.in/appy_app/appyApi_handler.php?</string>
+        <string name="base_url_cat">http://beta.appystore.in/appy_app/appyApi_handler.php?</string>
+        <string name="base_url_avatar">http://beta.appystore.in/appy_app/appyApi_handler.php?</string>-->
+
+
+    <!-- Production Url -->
+    <string name="base_url">http://www.appystore.in/appy_app/appyApi_handler.php?</string>
+    <string name="base_url_cat">http://www.appystore.in/appy_app/appyApi_handler.php?</string>
+    <string name="base_url_avatar">http://www.appystore.in/appy_app/appyApi_handler.php?</string>
+
+
+    <!--<string name="base_url_beta">http://beta.appystore.in/appy_app/appyApi_handler.php?</string>&ndash;&gt;-->
+
+
+    <!-- API RESPONSE ERROR MESSAGES -->
+    <string name="error">Error</string>
+    <string name="invalid_api_key">Invalid API key</string>
+    <string name="api_key_missing">API key is missing</string>
+    <string name="session_token_missing">Session Token is missing</string>
+    <string name="invalid_session_token">Invalid Session Token</string>
+    <string name="something_went_wrong">Something went wrong. Please try again later</string>
+    <string name="connection_timeout">Please check your network connectivity</string>
+    <string name="no_data_found">No data found</string>
+    <string name="no_relevant_search_results_found_">No Relevant Search Results Found.</string>
+
+    <!-- Edit Text Checking -->
+    <string name="editTextString">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ \u00A0</string>
+
+    <!-- Content Access -->
+    <string name="child2_name">Aayan Goyal</string>
+    <string name="content_block_instruction_txt">Please click on the category you want to disable</string>
+
+    <!-- App Activity Name -->
+    <string name="activity_login">login</string>
+    <string name="activity_register">register</string>
+    <string name="apps_games">appsgames</string>
+
+    <!-- Api method name -->
+    <string name="get_gcm">gcmReg</string>
+    <string name="get_category_list">getCategoryList</string>
+    <string name="get_content_list">getContentList</string>
+    <string name="get_cat_content_list">getCatContentList</string>
+    <string name="get_all_history_list">getAllHistory</string>
+    <string name="get_recommendation">getRecommendation</string>
+    <string name="get_search">search</string>
+    <string name="getChildPerformance">getChildPerformance</string>
+    <string name="getBlockCats">blockCats</string>
+    <string name="getVersionCheck">versionCheck</string>
+    <string name="getChildContentAceess">getChildContentAccess</string>
+    <string name="getAvatarList">getAvatarList</string>
+    <string name="getRateApp">rateApp</string>
+    <string name="getParentingVideos">getParentingVideos</string>
+    <string name="getContentDetail">getContentDetail</string>
+    <string name="updateChildDetails">updateChildDetails</string>
+    <string name="getPopularSearch">getPopularSearch</string>
+    <string name="getParentingCategories">getParentingCategories</string>
+    <string name="getCdnUrl">getCdnUrl</string>
+    <string name="updateGUserStatus">updateGUserStatus</string>
+
+    <!-- API Static param values -->
+    <string name="appy_pcp_id">999</string>
+    <string name="appy_campaign_id">800000</string>
+
+    <!-- Child Selection Screen -->
+    <string name="choosechild_header_header_txt">Select your child\'s profile</string>
+
+    <!-- Download Notification -->
+    <string name="download_notification_txt">Download Started</string>
+    <string name="download_notification_progress_txt">Start Downloading...</string>
+    <string name="download_notification_complete">Download complete</string>
+    <string name="downloading_txt">Downloading...</string>
+
+    <!-- Login Error Toast -->
+    <string name="login_error_txt">Sorry.! You have no active child. Please Register a child</string>
+
+    <!-- Game Category Content -->
+    <string name="game_error">Sorry.! No Game For Download</string>
+    <string name="already_download_game_toast">This game was already downloaded</string>
+
+    <!-- Content Type Name -->
+    <string name="content_videos">videos</string>
+    <string name="content_appsgames">appsgames</string>
+    <string name="content_activity">activity</string>
+    <string name="a_new_update_is_available_">A new update is available!</string>
+    <string name="upgrade_to_the_new_version_of_appystore_and_leverage_an_unlimited_content">Upgrade to the new version of Appystore \n and leverage an unlimited content</string>
+    <string name="skip">Skip</string>
+    <string name="update_now">Update Now</string>
+
+    <!-- Search -->
+    <string name="search_prompt">Please Enter Some Text to Search</string>
+    <string name="search_hint_txt">Enter Your Text Here</string>
+
+    <!-- Api Loading Text -->
+    <string name="progress_loading_txt">Loading...</string>
+    <string name="downloading_content_added">Content added to the queue</string>
+    <string name="downloading_content_already_added">Content already added to the queue</string>
+    <string name="downloading_started">Downloading</string>
+
+    <!-- Rate App -->
+    <string name="rate_app_prompt">Please give your rating or review</string>
+    <string name="rate_app_review_prompt">Please give your review</string>
+    <string name="rate_app_rating_prompt">Please give your rating</string>
+    <string name="txt_hint_feedback">Write your feedback within 255 characters.</string>
+
+    <!-- Dashboard Sub Video Fragment -->
+    <string name="no_video_found_prompt">No videos found</string>
+    <string name="no_games_found_prompt">No games found</string>
+
+    <!-- Send Email -->
+    <string name="appystore_contact_email">support@appystore.in</string>
+    <string name="start_activity_intent_email">Send Email...</string>
+    <string name="email_subject">Feedback</string>
+
+    <!-- Game Details -->
+    <string name="game_details_rating_txt">Experts rated</string>
+    <string name="txt_age">Age</string>
+    <string name="related_games_head_TV">Related Games</string>
+    <string name="game_details_see_more_txt">See More from</string>
+    <string name="free_dwonload_txt">Free Download</string>
+    <string name="update_dwonload_txt">Update Available</string>
+
+    <!-- Api Tags Contstant Values -->
+    <string name="tag_limit_value">10</string>
+    <string name="tag_offset_value">20</string>
+    <string name="tag_sequence_number">493</string>
+    <string name="tag_sequence_type">a</string>
+
+    <!-- Share App -->
+    <string name="share_app_subject_txt">Appystore - Kids Fun learning 1.5 to 6 years.</string>
+    <string name="share_app_intent_chooser">Share via</string>
+
+    <!-- Tool TIps Screen -->
+    <string name="tool_tips_got_it_txt">OK . Got it.</string>
+    <string name="tool_tips_hey_parents_txt">Hey Parents!</string>
+    <string name="tool_tips_msg1_line1">You may tap on this icon </string>
+    <string name="tool_tips_msg1_line2">to enter Parent\'s Area.</string>
+    <string name="tool_tips_msg2_line1">You may also double tap to </string>
+    <string name="tool_tips_msg2_line2"> fetch details about any item </string>
+    <string name="tool_tips_msg2_line3"> in the app.</string>
+    <string name="update_available">Update Available</string>
+
+    <!-- For Content Access Array -->
+    <string name="child_id">child_id</string>
+
+    <!-- Search Screen -->
+    <string name="popular_search_header_txt">Popular Searches</string>
+    <string name="save_to_offline">Save to offline</string>
+    <string name="txt_header_parenting_videos_cat">Parenting Video Categories</string>
+
+
+    <!--Rate us dialog-->
+    <string name="rate_us_header">Rate Us</string>
+    <string name="rate_us_exp_txt">How is your experience with appystore?</string>
+    <string name="rate_us_gplay_txt">Rate us on google play</string>
+    <string name="rate_us_nhappy_txt">Not happy :(</string>
+    <string name="rate_us_loveit_txt">Love it! :)</string>
+
+    <!--Feedback Dialog-->
+    <string name="feedback_header">Please share your feedback</string>
+    <string name="submit_feedback_txt">Submit my feedback</string>
+    <string name="feedback_email_hint">Email</string>
+    <string name="feedback_email_helper_txt">We will use this email to reply</string>
+    <string name="feedback_comments_hint">I\'m not happy because...</string>
+
+
+    <!--Payment Option-->
+    <string-array name="arr_payment_oprion">
+        <item> Google In App </item>
+        <item> CCAvenue </item>
+    </string-array>
+
+
+    <!--Subscription Confirm Dialog-->
+    <string name="confirm_msg_txt1">To save videos offline,</string>
+    <string name="confirm_msg_txt2">please Subscribe to Appystore</string>
+    <string name="subscribe_now_btn_txt">Subscribe now</string>
+    <string name="already_subscribe_user_txt">already a subscribed user? </string>
+    <string name="tap_here_txt">Tap here</string>
+
+    <!--Subscription Toast-->
+    <string name="loader_txt">Please Wait...</string>
+    <string name="sunscription_thanks_txt">Thank you for subscribing Appystore!</string>
+    <string name="problem_setting_iab">Something error occurred. Please try again later</string>
+    <string name="pls_retry_toast">Please retry in a few seconds.</string>
+
+
+    <!--Logout Dialog-->
+    <string name="logout_header_txt">Do you really want to Log Out?</string>
+    <string name="logout_yes_txt">Yes</string>
+    <string name="logout_no_txt">No</string>
+
+    <!-- Youtube Developer Key -->
+    <string name="youtube_developer_key">AIzaSyAiVxkcqV4IailxqcGiCaZ3Ium8FN60y5o</string>
+
+
+    <!--Enter OTP Dialog-->
+    <string name="enter_otp_msg_1">Kindly Enter the One Time Password</string>
+    <string name="enter_otp_msg_2">sent to %1$s</string>
+    <string name="submit">Submit</string>
+    <string name="resend_code"><u>Resend code</u></string>
+
+    <!--Error OTP Dialog-->
+    <string name="error_otp_msg_1">You have entered an incorrect</string>
+    <string name="error_otp_msg_2">verification code</string>
+
+    <!--trial subscription success-->
+    <string name="trial_success_title">Enjoy your %1$s days trial of Appystore!</string>
+    <string name="trial_success_msg1">Let your child explore videos from more than 20 fun learning categories.</string>
+    <string name="trial_success_msg2">Your trial expires on %1$s</string>
+    <string name="trial_success_action_positive">Got It</string>
+
+    <string name="cd_alert_icon">Alert</string>
+    <string name="back">Back</string>
+
+
+    <string name="title_free_trial">Start your XX days Free Trial Now</string>
+    <string name="description_free_trial">Share your mobile number and unlock all fun learning videos</string>
+
+
+    <string name="title_welcome">Welcome to AppyStore, the Right Start for your Child</string>
+    <string name="description_welcome">Get a new fun learning video suggestion for your child to watch each day</string>
+
+    <!--Offline Download Message -->
+    <string-array name="msg_offline_dwnld">
+        <item>To save videos offline,</item>
+        <item>please Subscribe to Appystore</item>
+    </string-array>
+
+    <!--Join Subscription Message -->
+    <string-array name="msg_join_subscription">
+        <item>Join now and get access to </item>
+        <item>2500+ fun learning videos for your child.</item>
+    </string-array>
+
+
+    <!--dialog start trial-->
+
+    <!-- new -->
+    <string name="dialog_trial_new_user_title">Start Your %1$s Day Free Trial Now!</string>
+    <string name="dialog_trial_new_user_msg">Get free worksheets delivered home &amp; watch unlimited fun learning videos</string>
+    <string name="dialog_trial_new_user_positive">Submit</string>
+    <string name="dialog_trial_new_user_negative">No Thanks</string>
+    <string name="dialog_trial_new_user_bottom">Get unlimited videos and free home delivered worksheets for just Rs %1$s per month! View Plans</string>
+
+    <!-- existing -->
+    <string name="dialog_trial_existing_title">Thank You For Staying With Us!</string>
+    <string name="dialog_trial_existing_msg">Appystore goes premium! Continue free access for %1$s days &amp; get free worksheets delivered home</string>
+    <string name="dialog_trial_existing_positive">Submit</string>
+    <string name="dialog_trial_existing_negative">No thanks</string>
+    <string name="dialog_trial_existing_bottom">Get unlimited videos and free home delivered worksheets for just Rs %1$s per month! View Plans</string>
+
+    <string name="dialog_trial_details">Appystore is a premium app with subscription plans starting at as low as Rs %1$s/month that gives your child over %2$s worksheets, delivered right to your door step.</string>
+
+    <string name="dialog_trial_status_title">Enjoy 3 Days Trial of Appystore!</string>
+    <string name="dialog_trial_status_msg_1">Let your child explore videos from more than 20 fun learning categories.</string>
+    <string name="dialog_trial_status_msg_2">Your trial expires on %1$s</string>
+
+    <!-- Trial Expired -->
+    <string name="dialog_trial_expired_title">Your Trial Has Expired</string>
+    <string name="dialog_trial_expired_msg">Get free worksheets delivered home &amp; watch unlimited fun learning videos for just Rs %1$s per month</string>
+    <string name="dialog_trial_expired_positive">Start Now</string>
+    <string name="dialog_trial_expired_negative"><u>No thanks</u></string>
+
+    <string name="invalid_mobile">Please enter a valid mobile number</string>
+
+    <string name="already_subscribed_toast">Dear User, you are already a subscriber.</string>
+
+    <!-- hint -->
+    <string name="hint_msisdn">Enter your mobile number</string>
+    <string name="hint_otp">Enter OTP</string>
+
+
+</resources>

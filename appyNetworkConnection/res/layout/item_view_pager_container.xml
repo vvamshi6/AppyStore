@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <!--ViewPager-->
+    <com.appy.store.lite.notification.AppViewPager
+        android:id="@+id/vp_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--Page indicator-->
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/containerActionButtonsCarousel"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <!-- Action Button -->
+    <LinearLayout
+        android:id="@+id/containerActionButtonsCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/container_tv_dialog_trial_action_negativeCarousel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_trial_action_negativeCarousel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h2"
+                    android:visibility="gone"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_tv_dialog_trial_action_positiveCarousel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/container_tv_dialog_trial_action_negativeCarousel"
+                >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_trial_action_positiveCarousel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/logout_btn_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_submit_with_shadow"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

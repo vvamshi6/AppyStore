@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/containerScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_10"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/rl_container_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_trial_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="dialog_trial_new_user_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog_trial_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/enter_otp_msg_1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <com.appy.store.lite.customviews.CustomEditText
+                    android:id="@+id/et_dialog_trial_msisdn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog_msg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/edit_text_otp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp_5"
+                    android:hint="@string/hint_msisdn"
+                    android:textColor="@color/text_color_dark_gray"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/containerBottomControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_5">
+
+        <RelativeLayout
+            android:id="@+id/containerActionButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/container_tv_dialog_trial_action_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_trial_action_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h2"
+                    android:visibility="gone"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_tv_dialog_trial_action_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/container_tv_dialog_trial_action_negative"
+                >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_trial_action_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/logout_btn_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_submit_with_shadow"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/tv_dialog_trial_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/containerActionButtons"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="dialog_trial_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h2"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+    </LinearLayout>
+
+</RelativeLayout>

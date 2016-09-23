@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tool_tips_bg_RL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.80"
+    android:background="@android:color/black" >
+
+    <ImageView
+        android:id="@+id/icon_header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/parent_icon_margin_top"
+        android:src="@drawable/ic_videos_mother_icon_deselect" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/arrow_margin_left"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/arrow_margin_top" >
+
+        <RelativeLayout
+            android:id="@+id/top_RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/arrow_icon_img_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_tool_tip_arrow" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tool_tips_got_it_txt_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:padding="@dimen/dp_5"
+                android:text="@string/tool_tips_got_it_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_25" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tool_tips_msg_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_RL"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:orientation="vertical" >
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                android:padding="@dimen/dp_5"
+                android:text="@string/tool_tips_hey_parents_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tool_tips_txt_size" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tool_tips_msg1_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                android:padding="@dimen/dp_5"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tool_tips_txt_size" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tool_tips_msg2_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/tool_tips_msg2_clr"
+                android:textSize="@dimen/tool_tips_txt_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

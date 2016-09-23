@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/child_dashboard_background"
+        android:paddingTop="@dimen/margin_ten" >
+
+        <RelativeLayout
+            android:id="@+id/number_add_activity_back_RL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/common_header_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/videos_small_back_icon"
+                android:contentDescription="@null" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/common_header_tv_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@id/common_header_iv_back"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/activity_number_add_head_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_20" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/parent_area_header"
+            android:layout_marginTop="@dimen/dp_30" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- change the following line -->
+    <!-- Development Id -->
+    <!--<string name="ga_trackingId">UA-66546585-1</string>-->
+
+    <!-- Client ID Production -->
+    <!--<string name="ga_trackingId">UA-68286120-2</string>-->
+
+    <!-- Client ID Testing -->
+    <string name="ga_trackingId">UA-68286120-1</string>
+
+    <bool name="ga_autoActivityTracking">false</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <string name="ga_appName">AppystoreLite</string>
+    <string name="ga_appVersion">1.0.4</string>
+
+    <bool name="ga_debug">false</bool>
+
+    <item
+        name="ga_dispatchPeriod"
+        format="integer"
+        type="integer">120
+    </item>
+
+    <string name="ga_sampleFrequency">90</string>
+
+    <bool name="ga_anonymizeIp">true</bool>
+    <bool name="ga_dryRun">false</bool>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <integer name="ga_sessionTimeout">1800</integer>
+
+    <string name="com.appy.store.lite">AppystoreLite</string>
+
+</resources>

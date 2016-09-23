@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/margin_five" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_50"
+            android:paddingRight="@dimen/dp_30" >
+
+            <RelativeLayout
+                android:id="@+id/inner1_contentaccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_child"
+                    android:layout_width="@dimen/avatar_height"
+                    android:layout_height="@dimen/avatar_height"
+                    android:contentDescription="@string/childaccess_childiv_contentdes" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@+id/iv_child"
+                    android:orientation="vertical" >
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/content_access_child_name_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:textColor="@color/common_header_txt_clr"
+                        android:textSize="@dimen/h1"
+                        android:textStyle="bold" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/content_access_child_age_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:textColor="@color/common_header_txt_clr"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/content_access_edit_child_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:background="@drawable/wishlist_details_item_subscribe_btn_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="@string/edit_child_details_txt"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_chooselearning_contentaccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inner1_contentaccess"
+                android:layout_marginTop="@dimen/dp_24"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/childaccess_choose_learning"
+                android:textColor="@color/common_header_txt_clr"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/includecategory_contentaccess_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_chooselearning_contentaccess"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/choose_learning_area_check_uncheck_IV"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@drawable/checkbox_selector"
+                    android:contentDescription="@null" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/includecategory_contentaccess_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:text="@string/childaccess_includecategory_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/h3" />
+            </LinearLayout>
+
+            <!-- Instruction Text -->
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/content_access_instruction_txt_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/includecategory_contentaccess_LL"
+                android:layout_marginTop="@dimen/dp_16"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/content_block_instruction_txt"
+                android:textColor="@color/common_header_txt_clr"
+                android:textSize="@dimen/h3" />
+
+            <!-- Content Access -->
+
+            <RelativeLayout
+                android:id="@+id/content_access_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/content_access_instruction_txt_TV"
+                android:layout_marginTop="@dimen/dp_8" >
+
+                <com.appy.store.lite.customviews.ExpandableHeightListView
+                    android:id="@+id/content_access_category_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbars="none" >
+                </com.appy.store.lite.customviews.ExpandableHeightListView>
+
+                <include
+                    android:id="@+id/no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    layout="@layout/appy_nodata_found" />
+
+                <include
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    layout="@layout/appy_progressbar"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.appy.store.lite.customviews.CustomButton
+                android:id="@+id/content_access_save_button"
+                android:layout_width="@dimen/content_access_save_btn_width"
+                android:layout_height="@dimen/content_access_save_btn_height"
+                android:layout_below="@+id/content_access_list"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:background="@drawable/wishlist_subscribe_button_bg"
+                android:text="@string/content_access_save_btn_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/h2"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

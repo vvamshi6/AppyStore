@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rel_progress_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10" >
+
+            <com.appy.store.lite.progress.helper.ProgressBarCircularIndeterminate
+                android:id="@+id/progress_circle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/progress_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/progress_circle"
+                android:layout_toRightOf="@+id/progress_circle"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:gravity="center_vertical|left"
+                android:padding="@dimen/dp_5"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

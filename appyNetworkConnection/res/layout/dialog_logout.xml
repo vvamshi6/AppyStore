@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bg_otp_dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_40"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_50">
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/logout_header_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_30"
+            android:orientation="horizontal">
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_logout_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/logout_btn_height"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_weight="1"
+                android:background="@drawable/bg_save_to_offline_button"
+                android:gravity="center"
+                android:text="@string/logout_no_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h3"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_logout_yes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/logout_btn_height"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_weight="1"
+                android:background="@drawable/bg_love_it_btn"
+                android:gravity="center"
+                android:text="@string/logout_yes_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h3"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Cross Button-->
+    <ImageButton
+        android:id="@+id/ibtn_logout_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:background="@null"
+        android:src="@drawable/close_icon_dark" />
+
+</RelativeLayout>

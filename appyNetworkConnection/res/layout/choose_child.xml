@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/child_dashboard_background" >
+
+    <!-- Header Text -->
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tv_choosechild_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:text="@string/choosechild_header_header_txt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/h1" />
+
+    <!-- Choose Child Grid -->
+
+    <ScrollView
+        android:id="@+id/sv_choose_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_choosechild_header"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/dp_5"
+        android:scrollbars="none" >
+
+        <com.appy.store.lite.customviews.ExpandableHeightGridView
+            android:id="@+id/grid_choose_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/margin_five"
+            android:horizontalSpacing="@dimen/dashboard_grid_horizontal_spacing"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dashboard_grid_vertical_spacing" >
+        </com.appy.store.lite.customviews.ExpandableHeightGridView>
+    </ScrollView>
+
+</RelativeLayout>

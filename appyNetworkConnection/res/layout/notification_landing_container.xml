@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/dp_24"
+    android:paddingRight="@dimen/dp_24"
+    android:orientation="vertical">
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tv_dialog_trial_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Unlock all Videos - Start your trial Now!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h1_dialog"
+        android:textStyle="bold"
+        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg_otp_dialog"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_24"
+            android:paddingRight="@dimen/dp_24">
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_dialog_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="Start your 3 day trial by sharing your mobile number to unlock all the fun learning content for your child"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h3_dialog"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+
+            <com.appy.store.lite.customviews.CustomEditText
+                android:id="@+id/et_dialog_trial_msisdn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/edit_text_otp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/text_color_dark_gray"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            <RelativeLayout
+                android:id="@+id/containerActionButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center|bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10">
+
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_trial_action_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/logout_btn_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_toLeftOf="@+id/tv"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_24"
+                    android:paddingRight="@dimen/dp_24"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/dialog_trial_new_user_negative"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3"
+                    android:visibility="gone"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/tv_dialog_trial_action_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/logout_btn_height"
+                   android:layout_toRightOf="@+id/tv"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/btn_submit_with_shadow"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_24"
+                    android:paddingRight="@dimen/dp_24"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="SMS"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            </RelativeLayout>
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_dialog_trial_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/dialog_trial_existing_bottom"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h2"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

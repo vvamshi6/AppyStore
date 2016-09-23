@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/checkbox_selector" />
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/content_access_category_item_name_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center"
+        android:lines="2"
+        android:layout_marginLeft="@dimen/dp_5"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:textColor="@color/color_selector"
+        android:textSize="@dimen/h3" />
+
+</LinearLayout>

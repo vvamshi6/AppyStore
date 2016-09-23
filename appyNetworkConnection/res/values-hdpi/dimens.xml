@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Dashboard Grid Item -->
+    <dimen name="dashboard_gridItem_image_back_width">120dp</dimen>
+    <dimen name="dashboard_gridItem_image_back_height">95dp</dimen>
+    <dimen name="dashboard_gridItem_image_height">90dp</dimen>
+    <dimen name="completion_dialog_right_img_height">85dp</dimen>
+    <dimen name="dashboard_gridItem_image_width">115dp</dimen>
+    <dimen name="dashboard_grid_vertical_spacing">10dp</dimen>
+    <dimen name="dashboard_grid_horizontal_spacing">16dp</dimen>
+    <dimen name="congratulation_txt">22sp</dimen>
+    <dimen name="video_completion_back_txt">18sp</dimen>
+    <dimen name="video_replay_txt">18sp</dimen>
+    <dimen name="video_completion_win_txt">16sp</dimen>
+    <dimen name="avatar_padding">5dp</dimen>
+    <dimen name="register_screen_txt">24sp</dimen>
+
+    <!-- Login Screen -->
+    <dimen name="login_header_txt">25sp</dimen>
+    <dimen name="enter_mobile_no_width">450dp</dimen>
+    <dimen name="login_enter_mobile_no_txt">16sp</dimen>
+    <dimen name="login_padding_top">10dp</dimen>
+    <dimen name="login_padding_bottom">15dp</dimen>
+    <dimen name="margin_from_login_header_txt">10dp</dimen>
+
+    <!-- Register Screen -->
+    <dimen name="margin_from_register_top_header">25dp</dimen>
+    <dimen name="margin_gap_txt">5dp</dimen>
+
+    <!-- popup height width -->
+    <dimen name="pop_up_height">70dp</dimen>
+    <dimen name="pop_up_width">80dp</dimen>
+
+    <!-- Adult verification Dialog -->
+    <dimen name="verification_dilaog_width">400dp</dimen>
+    <dimen name="verification_dilaog_height">180dp</dimen>
+    <dimen name="verification_dialog_teddy_width">80dp</dimen>
+    <dimen name="verification_dialog_teddy_height">120dp</dimen>
+    <dimen name="verification_dialog_btn_height">40dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+
+    <!-- Activity play screen -->
+    <dimen name="activity_option_number_text">30sp</dimen>
+    <dimen name="activity_main_number_text">42sp</dimen>
+
+    <!-- Child Avatar -->
+    <dimen name="avatar_padding_right">20dp</dimen>
+    <dimen name="avatar_padding_left">20dp</dimen>
+    <dimen name="margin_from_avatar_icon">10dp</dimen>
+    <dimen name="avatar_padding_zero">0dp</dimen>
+    <dimen name="avatar_height">80dp</dimen>
+
+    <!-- For Games Item -->
+    <dimen name="game_image_back_height">104dp</dimen>
+    <dimen name="game_image_height">100dp</dimen>
+
+    <!-- New Modified -->
+    <dimen name="dashboard_video_grid_vertical_spacing">16dp</dimen>
+    <!-- For Dashboard Page -->
+    <dimen name="dp_8">2dp</dimen>
+    <dimen name="pager_top_margin">5dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+
+    <!-- For Games Details Page -->
+    <dimen name="games_details_margin">24dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="sp32">32sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp21">21sp</dimen>
+    <dimen name="sp24">24sp</dimen>
+    <dimen name="sp19">19sp</dimen>
+
+    <!-- Newly Modified -->
+    <dimen name="h1">20sp</dimen>
+    <dimen name="h2">15sp</dimen>
+    <dimen name="h3">14sp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+
+
+    <dimen name="h1_dialog">24sp</dimen>
+    <dimen name="h3_dialog">19sp</dimen>
+
+
+    <!-- Video Details -->
+    <dimen name="video_view_height">280dp</dimen>
+
+    <dimen name="player_minimized_width">250dp</dimen>
+    <dimen name="player_minimized_height">200dp</dimen>
+    <dimen name="player_minimized_margin">100dp</dimen>
+    <dimen name="recommendation_item_width">140dp</dimen>
+
+    <!--Rate Us Dialog-->
+    <dimen name="rate_us_header_icon_width">60dp</dimen>
+    <dimen name="rate_us_header_icon_height">60dp</dimen>
+    <dimen name="rate_us_dialog_btn_width">140dp</dimen>
+    <dimen name="rate_us_dialog_btn_height">34dp</dimen>
+    <dimen name="rate_us_header_txt_size">25sp</dimen>
+
+    <!--Feedback Dialog-->
+    <dimen name="feedback_submit_btn_width">200dp</dimen>
+    <dimen name="feedback_comments_max_height">80dp</dimen>
+    <dimen name="dialog_width">330dp</dimen>
+    <dimen name="feedback_margin_top">0dp</dimen>
+
+    <!--Logout Dialog-->
+    <dimen name="logout_btn_height">40dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+
+    <dimen name="otp_dialog_msg">18sp</dimen>
+</resources>

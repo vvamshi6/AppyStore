@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_15" >
+
+    <LinearLayout
+        android:id="@+id/header_bg_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/recommendation_header_TV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:gravity="left"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/games_cat_header_txt"
+            android:textStyle="bold" />
+
+        <com.appy.store.lite.ripple.RippleDecoratorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rdv_rippleAnimationDuration="800"
+            app:rdv_rippleAnimationTrigger="onDown"
+            app:rdv_rippleCentered="true"
+            app:rdv_rippleColor="@android:color/holo_blue_dark"
+            app:rdv_rippleRadius="40dp"
+            app:rdv_rippleStyle="fill"
+            app:rdv_zoomAnimation="true"
+            app:rdv_zoomAnimationDuration="400"
+            app:rdv_zoomAnimationTrigger="onTap" >
+
+            <com.appy.store.lite.customviews.CustomButton
+                android:id="@+id/see_all_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:background="@drawable/ic_see_all_button"
+                android:paddingRight="4dp"
+                android:text="@string/parents_videos_see_all_btn_txt"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_20"
+                android:visibility="visible" />
+        </com.appy.store.lite.ripple.RippleDecoratorView>
+    </LinearLayout>
+
+</LinearLayout>

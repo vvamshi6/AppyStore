@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_5"
+    android:paddingTop="@dimen/margin_ten" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <!-- Wishlist Grid -->
+
+        <com.appy.store.lite.customviews.ExpandableHeightGridView
+            android:id="@+id/parent_wishlist_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_30"
+            android:horizontalSpacing="@dimen/margin_fifteen"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/margin_ten" >
+        </com.appy.store.lite.customviews.ExpandableHeightGridView>
+    </ScrollView>
+
+</LinearLayout>

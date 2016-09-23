@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parent_dashboard_background">
+
+    <include
+        android:id="@+id/video_details_header"
+        layout="@layout/common_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/video_details_header"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/dp_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Video Player Layout -->
+
+            <FrameLayout
+                android:id="@+id/video_details_player_FL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_view_height">
+
+                
+                <RelativeLayout
+                    android:id="@+id/video_thumb_back_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_5">
+
+                    <ImageView
+                        android:id="@+id/video_thumb_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:scaleType="centerInside" />
+
+                    <ImageView
+                        android:id="@+id/video_play_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_play_video_big_play_button" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/video_item_LL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/video_details_player_FL"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <!-- Item Name -->
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/video_details_item_name_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/game_details_header_clr"
+                    android:textSize="@dimen/h1"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <!-- Rating & Downloads Layout -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:orientation="horizontal">
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/game_details_rating_txt"
+                        android:textColor="@color/game_details_txt_clr"
+                        android:textSize="@dimen/h2"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                    <RatingBar
+                        android:id="@+id/video_details_item_rating_bar"
+                        style="@style/customRatingBarWishlistDetails"
+                        android:layout_width="@dimen/game_details_rating_bar_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+                <!-- Age -->
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:id="@+id/video_details_age_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:textColor="@color/game_details_txt_clr"
+                    android:textSize="@dimen/h2"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                <!-- Subscribe Button -->
+
+                <com.appy.store.lite.customviews.CustomButton
+                    android:id="@+id/video_details_item_subscribe_BTN"
+                    android:layout_width="@dimen/wishlist_details_item_subscribe_btn_width"
+                    android:layout_height="@dimen/wishlist_details_item_subscribe_btn_height"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/wishlist_details_item_subscribe_btn_bg"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/h2"
+                    android:visibility="visible"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </LinearLayout>
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/video_details_txt_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/video_item_LL"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="@color/game_details_txt_clr"
+                android:textSize="@dimen/h3"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+            <RelativeLayout
+                android:id="@+id/video_details_bottom_RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/video_details_txt_TV"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <!--
+                <com.appy.store.customviews.CustomTextView
+                    android:id="@+id/related_videos_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    Appystore:fontName="@string/font_name_passing_notes"
+                    android:text="@string/related_games_head_TV"
+                    android:textColor="@color/game_details_header_clr"
+                    android:textSize="@dimen/sp_18" />
+
+                <com.appy.store.customviews.ExpandableHeightGridView
+                    android:id="@+id/video_details_related_videos_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/related_games_TV"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:horizontalSpacing="@dimen/dp_10"
+                    android:numColumns="4" >
+                </com.appy.store.customviews.ExpandableHeightGridView>
+                -->
+
+                <com.appy.store.lite.ripple.RippleDecoratorView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:rdv_rippleAnimationDuration="800"
+                    app:rdv_rippleAnimationTrigger="onDown"
+                    app:rdv_rippleCentered="true"
+                    app:rdv_rippleColor="@android:color/holo_blue_dark"
+                    app:rdv_rippleRadius="60dp"
+                    app:rdv_rippleStyle="fill"
+                    app:rdv_zoomAnimation="true"
+                    app:rdv_zoomAnimationDuration="400"
+                    app:rdv_zoomAnimationTrigger="onTap">
+
+                    <com.appy.store.lite.customviews.CustomButton
+                        android:id="@+id/video_item_see_all_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/child_details_save_button"
+                        android:textColor="@color/game_details_see_all_txt_clr"
+                        android:textSize="@dimen/h2"
+                        android:visibility="visible"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+                </com.appy.store.lite.ripple.RippleDecoratorView>
+                <!--
+                     <include
+                    android:id="@+id/no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    layout="@layout/appy_nodata_found" />
+                -->
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/progressbar"
+                layout="@layout/appy_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

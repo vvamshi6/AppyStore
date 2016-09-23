@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pichartview_parent"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+    </ScrollView>
+
+    <!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" 
+        android:visibility="gone">
+
+        <com.appy.store.customviews.ExpandableHeightGridView
+            android:id="@+id/grid_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/margin_five"
+            android:horizontalSpacing="@dimen/dashboard_grid_horizontal_spacing"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/dashboard_grid_vertical_spacing" >
+        </com.appy.store.customviews.ExpandableHeightGridView>
+    </ScrollView>
+    -->
+
+</RelativeLayout>

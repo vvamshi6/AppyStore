@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/parents_area_box" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/cat_name_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:textColor="@color/parents_dashbrd_grid_item_txt_clr"
+            android:textSize="@dimen/h2" />
+    </RelativeLayout>
+
+</RelativeLayout>

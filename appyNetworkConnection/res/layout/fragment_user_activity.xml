@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/margin_fifteen"
+    android:paddingLeft="@dimen/margin_fifteen"
+    android:paddingRight="@dimen/margin_fifteen" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/tv_plans_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/user_activity_back"
+            android:orientation="horizontal"
+            android:padding="30dp" >
+
+            <ImageView
+                android:id="@+id/user_activity_hintview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                 />
+            <!--android:background="@drawable/choose_answer_teddy"-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/qns_plus_icon_IV"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:gravity="center_horizontal"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_main_number_text"
+                        android:textStyle="bold" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/qns_plus_icon_IV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_toLeftOf="@+id/qns_second_value_txt_TV"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:gravity="center_horizontal"
+                        android:text="+"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_main_number_text"
+                        android:textStyle="bold" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/qns_second_value_txt_TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_toLeftOf="@+id/equals_sign_txt_TV"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:gravity="center_horizontal"
+                        android:text="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_main_number_text"
+                        android:textStyle="bold" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/equals_sign_txt_TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_toLeftOf="@+id/qns_mark_txt_TV"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:gravity="center_horizontal"
+                        android:text="="
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_main_number_text"
+                        android:textStyle="bold" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/qns_mark_txt_TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:gravity="center_horizontal"
+                        android:text="@string/txt_qns_mark"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_main_number_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <!-- Answer Option Layout -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/user_activity_answer1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:background="@drawable/choose_answer_dotted_bg"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_option_number_text" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/user_activity_answer2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/margin_ten"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:background="@drawable/choose_answer_dotted_bg"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_option_number_text" />
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:id="@+id/user_activity_answer3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/margin_ten"
+                        android:layout_weight="1"
+                        AppystoreLite:fontName="@string/font_name_shadows_into_light"
+                        android:background="@drawable/choose_answer_dotted_bg"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity_option_number_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/user_activity_completion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/activity_video_completion"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

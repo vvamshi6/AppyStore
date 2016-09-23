@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+             <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/checkbox_selector" />
+    -->
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/content_access_category_type_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:text="@string/childaccess_math"
+        android:textColor="@color/common_header_txt_clr"
+        android:textSize="@dimen/h2" />
+
+    <com.appy.store.lite.customviews.ExpandableHeightGridView
+        android:id="@+id/content_access_category_item_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:horizontalSpacing="@dimen/dp_15"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dp_5" >
+    </com.appy.store.lite.customviews.ExpandableHeightGridView>
+
+</LinearLayout>

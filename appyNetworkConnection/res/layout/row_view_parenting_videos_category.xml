@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appy.store.lite.ripple.RippleDecoratorView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:rdv_rippleAnimationDuration="800"
+    app:rdv_rippleAnimationTrigger="onDown"
+    app:rdv_rippleCentered="true"
+    app:rdv_rippleColor="@android:color/holo_blue_dark"
+    app:rdv_rippleRadius="60dp"
+    app:rdv_rippleStyle="fill"
+    app:rdv_zoomAnimation="true"
+    app:rdv_zoomAnimationDuration="400"
+    app:rdv_zoomAnimationTrigger="onTap" >
+
+    <LinearLayout
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.appy.store.lite.customviews.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_videos_image_back_height"
+            app:sl_cornerRadius="4dp"
+            app:sl_dx="@dimen/shadow_x"
+            app:sl_dy="@dimen/shadow_y" >
+
+            <RelativeLayout
+                android:id="@+id/rl_bg_parenting_videos_cat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_image" >
+
+                <ImageView
+                    android:id="@+id/iv_parenting_videos_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/dp_2"
+                    android:contentDescription="@null"
+                    android:focusable="false" />
+
+                <LinearLayout
+                    android:id="@+id/locked_overlay_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dashboard_gridItem_image_height"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/dp_2"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:alpha=".50"
+                    android:background="@drawable/locked_item_transparent_bg"
+                    android:gravity="bottom"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_5" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/videos_categories_locked_icon" />
+
+                        <com.appy.store.lite.customviews.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            AppystoreLite:fontName="@string/font_name_passing_notes"
+                            android:text="@string/locked_txt"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_14" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.appy.store.lite.customviews.ShadowLayout>
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/tv_parenting_videos_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:focusable="false"
+            android:lines="2"
+            android:textColor="@color/parenting_videos_category_item_txt_clr"
+            android:textSize="@dimen/h2" />
+    </LinearLayout>
+
+</com.appy.store.lite.ripple.RippleDecoratorView>

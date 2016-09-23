@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <com.google.android.exoplayer.AspectRatioFrameLayout
+        android:id="@+id/video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <View
+            android:id="@+id/shutter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <com.google.android.exoplayer.text.SubtitleLayout
+            android:id="@+id/subtitles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.exoplayer.AspectRatioFrameLayout>
+
+    <ImageView
+        android:id="@+id/child_video_thumb_img_IV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <com.appy.store.lite.progress.helper.ProgressBarCircularIndeterminate
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_gravity="center"
+        android:background="@android:color/white"/>
+</FrameLayout>

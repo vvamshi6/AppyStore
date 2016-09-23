@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_20" >
+
+    <!-- Header Text -->
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/games_list_item_header_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        AppystoreLite:fontName="@string/font_name_passing_notes"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/h2"
+        android:visibility="gone" />
+
+    <com.appy.store.lite.customviews.ExpandableHeightGridView
+        android:id="@+id/category_item_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="5dp"
+        android:horizontalSpacing="@dimen/dashboard_grid_horizontal_spacing"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dashboard_grid_vertical_spacing" >
+    </com.appy.store.lite.customviews.ExpandableHeightGridView>
+
+    <com.appy.store.lite.ripple.RippleDecoratorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rdv_rippleAnimationDuration="800"
+        android:layout_marginLeft="10dp"
+        app:rdv_rippleAnimationTrigger="onDown"
+        app:rdv_rippleCentered="true"
+        app:rdv_rippleColor="@android:color/holo_blue_dark"
+        app:rdv_rippleRadius="40dp"
+        app:rdv_rippleStyle="fill"
+        app:rdv_zoomAnimation="true"
+        app:rdv_zoomAnimationDuration="400"
+        app:rdv_zoomAnimationTrigger="onTap" >
+
+        <com.appy.store.lite.customviews.CustomButton
+            android:id="@+id/games_item_see_all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:background="@drawable/ic_see_all_button"
+            android:text="@string/parents_videos_see_all_btn_txt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/h2"
+            android:visibility="visible" />
+    </com.appy.store.lite.ripple.RippleDecoratorView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/margin_five" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_30"
+            android:orientation="vertical" >
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/faq_txt"
+                android:textColor="@color/common_header_txt_clr"
+                android:textSize="@dimen/sp_25" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/faq_demo_txt1"
+                android:textColor="@color/common_header_txt_clr"
+                android:textSize="@dimen/sp_18" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/faq_demo_txt2"
+                android:textColor="@color/help_text2"
+                android:textSize="@dimen/sp_18" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/notification_txt1_demo_txt"
+                android:textColor="@color/notification_txt_clr"
+                android:textSize="@dimen/sp_18" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/faq_demo_txt3"
+                android:textColor="@color/common_header_txt_clr"
+                android:textSize="@dimen/sp_18" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/faq_demo_txt1"
+                android:textColor="@color/common_header_txt_clr"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- sky color -->
+
+    <solid android:color="@color/blue" />
+
+    <size
+        android:height="@dimen/drawable_square_height"
+        android:width="@dimen/drawable_square_width" />
+
+</shape>

@@ -1,0 +1,249 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_fifteen">15dp</dimen>
+    <dimen name="margin_twenty">20dp</dimen>
+    <dimen name="margin_twentyfive">25dp</dimen>
+    <dimen name="margin_thirty">30dp</dimen>
+
+    <!-- Dashboard Grid Item -->
+    <dimen name="dashboard_gridItem_image_back_width">135dp</dimen>
+    <dimen name="dashboard_gridItem_image_back_height">135dp</dimen>
+    <dimen name="dashboard_gridItem_image_height">130dp</dimen>
+    <dimen name="dashboard_gridItem_image_width">130dp</dimen>
+    <dimen name="dashboard_grid_vertical_spacing">20dp</dimen>
+    <dimen name="dashboard_grid_horizontal_spacing">18dp</dimen>
+    <dimen name="dashboard_videos_image_back_height">95dp</dimen>
+    <dimen name="dashboard_videos_image_height">75dp</dimen>
+
+    <!-- Dashboard History Grid Item -->
+    <dimen name="history_video_lenght">10sp</dimen>
+
+    <!-- Login Screen -->
+    <dimen name="login_header_txt">35sp</dimen>
+    <dimen name="without_login_txt">18sp</dimen>
+    <dimen name="login_enter_button_width">40dp</dimen>
+    <dimen name="enter_mobile_no_width">400dp</dimen>
+    <dimen name="login_enter_mobile_no_txt">20sp</dimen>
+    <dimen name="login_padding_top">25dp</dimen>
+    <dimen name="login_padding_bottom">20dp</dimen>
+    <dimen name="margin_from_login_header_txt">25dp</dimen>
+
+    <!-- Register Screen -->
+    <dimen name="register_screen_txt">26sp</dimen>
+    <dimen name="save_and_continue_height">40dp</dimen>
+    <dimen name="margin_from_register_top_header">50dp</dimen>
+
+    <!-- Child Avatar Screen -->
+    <dimen name="avatar_head_txt">38sp</dimen>
+    <dimen name="add_another_child_width">400dp</dimen>
+    <dimen name="avatar_padding_right">20dp</dimen>
+    <dimen name="avatar_padding_left">20dp</dimen>
+    <dimen name="margin_from_avatar_icon">21dp</dimen>
+
+    <!-- Rating App Screen -->
+    <!-- Common Margins -->
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="sp_1">1sp</dimen>
+    <dimen name="sp_2">2sp</dimen>
+    <dimen name="sp_3">3sp</dimen>
+    <dimen name="sp_4">4sp</dimen>
+    <dimen name="sp_5">5sp</dimen>
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_25">25sp</dimen>
+    <dimen name="sp_26">26sp</dimen>
+    <dimen name="sp_28">28sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+    <dimen name="sp_35">35sp</dimen>
+    <dimen name="sp_40">40sp</dimen>
+    <dimen name="sp_45">45sp</dimen>
+    <dimen name="sp_50">50sp</dimen>
+    <dimen name="sp_55">55sp</dimen>
+    <dimen name="sp_80">80sp</dimen>
+
+    <!-- Video Paused Screen -->
+    <dimen name="return_to_video_txt">20sp</dimen>
+    <dimen name="exit_video_txt">20sp</dimen>
+    <dimen name="dotted_rectangle_height">100dp</dimen>
+    <dimen name="dotted_rectangle_width">350dp</dimen>
+
+    <!-- Video Completion Screen -->
+    <dimen name="video_completion_back_txt">20sp</dimen>
+    <dimen name="congratulation_txt">20sp</dimen>
+    <dimen name="video_replay_txt">20sp</dimen>
+    <dimen name="video_completion_win_txt">14sp</dimen>
+    <dimen name="video_completion_bottom_part_header">12sp</dimen>
+    <dimen name="video_completion_middle_part_height">130dp</dimen>
+    <dimen name="common_text_size">18sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="chart_height">120dp</dimen>
+    <dimen name="drawable_circle_height_width">100dp</dimen>
+    <dimen name="drawable_square_height">20dp</dimen>
+    <dimen name="drawable_square_width">30dp</dimen>
+    <dimen name="blue_btn_height">10dp</dimen>
+    <dimen name="blue_btn_width">200dp</dimen>
+
+    <!-- Video Play Screen -->
+    <dimen name="media_controller_height">30dp</dimen>
+    <dimen name="media_controller_played_time_txt">16sp</dimen>
+    
+    <!-- Tool Tips View -->
+    <dimen name="parent_icon_margin_top">10dp</dimen>
+    <dimen name="tool_tips_txt_size">22sp</dimen>
+    <dimen name="arrow_margin_left">50dp</dimen>
+    <dimen name="arrow_margin_top">30dp</dimen>
+
+    <!-- Parent Wishlist Screen -->
+    <dimen name="wishlist_item_demo_txt">18sp</dimen>
+    <dimen name="wishlist_item_downloads_count_demo_txt">14sp</dimen>
+    <dimen name="wishlist_item_price_demo_txt">16sp</dimen>
+    <dimen name="wishlist_item_image_height">100dp</dimen>
+    <dimen name="wishlist_item_image_width">100dp</dimen>
+
+    <!-- Parents Blog Screen -->
+    <dimen name="parents_blog_item_type_demo_txt">20sp</dimen>
+    <dimen name="parents_blog_item_top_RL_height">150dp</dimen>
+
+    <!-- Wishlist Item Details -->
+    <dimen name="wishlist_details_item_name_demo_txt">25sp</dimen>
+    <dimen name="wishlist_details_item_price_demo_txt">25sp</dimen>
+    <dimen name="wishlist_details_item_info_demo_txt">18sp</dimen>
+    <dimen name="wishlist_details_item_image_height">150dp</dimen>
+    <dimen name="wishlist_details_item_image_width">150dp</dimen>
+    <dimen name="wishlist_details_item_subscribe_btn_width">130dp</dimen>
+    <dimen name="wishlist_details_item_subscribe_btn_height">40dp</dimen>
+    <dimen name="wishlist_details_grid_item_height">200dp</dimen>
+    <dimen name="wishlist_rating_bar_min_height">30dp</dimen>
+    <dimen name="wishlist_rating_bar_max_height">30dp</dimen>
+
+    <!-- Subscription Done Button -->
+    <dimen name="subscription_done_btn_width">140dp</dimen>
+    <dimen name="subscription_done_btn_height">50dp</dimen>
+
+    <!-- Rate App Screen -->
+    <dimen name="rate_app_submit_btn_width">100dp</dimen>
+    <dimen name="rate_app_submit_btn_height">50dp</dimen>
+    <dimen name="rating_bar_min_height">52dp</dimen>
+    <dimen name="rating_bar_max_height">52dp</dimen>
+
+    <!-- Content Aceess Save Button -->
+    <dimen name="content_access_save_btn_width">140dp</dimen>
+    <dimen name="content_access_save_btn_height">50dp</dimen>
+
+    <!-- Adult verification Dialog -->
+    <dimen name="verification_dilaog_width">400dp</dimen>
+    <dimen name="verification_dilaog_height">180dp</dimen>
+    <dimen name="verification_dilaog_mid_width">320dp</dimen>
+    <dimen name="verification_dialog_teddy_width">80dp</dimen>
+    <dimen name="verification_dialog_teddy_height">120dp</dimen>
+    <dimen name="verification_dialog_btn_height">40dp</dimen>
+    <dimen name="verification_dilaog_left_padding">50dp</dimen>
+
+    <!-- Subscription Plan -->
+    <dimen name="plans_grid_item_height">100dp</dimen>
+
+    <!-- Activity play screen -->
+    <dimen name="activity_option_number_text">35sp</dimen>
+    <dimen name="activity_main_number_text">70sp</dimen>
+
+    <!-- popup height width -->
+    <dimen name="pop_up_height">50dp</dimen>
+    <dimen name="pop_up_width">60dp</dimen>
+
+    <!-- Recommendation Screen -->
+    <dimen name="recommendation_header_txt_size">16sp</dimen>
+    <dimen name="avatar_height">100dp</dimen>
+
+    <!-- Games Screen -->
+    <dimen name="games_cat_header_txt">18sp</dimen>
+    <!-- For Games Item -->
+    <dimen name="game_image_back_height">124dp</dimen>
+    <dimen name="game_image_height">120dp</dimen>
+
+    <!-- New Modified -->
+    <dimen name="dashboard_video_grid_vertical_spacing">20dp</dimen>
+    <!-- For Dashboard Page -->
+    <dimen name="dp_8">7dp</dimen>
+    <dimen name="pager_top_margin">12dp</dimen>
+    <dimen name="dp_12">14dp</dimen>
+    <dimen name="dp_24">26dp</dimen>
+    <dimen name="dp_16">18dp</dimen>
+
+    <!-- For Games Details Page -->
+    <dimen name="games_details_margin">26dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="sp32">34sp</dimen>
+    <dimen name="sp16">18sp</dimen>
+    <dimen name="sp21">23sp</dimen>
+    <dimen name="sp24">26sp</dimen>
+    <dimen name="sp19">21sp</dimen>
+
+    <!-- Newly Modified -->
+    <dimen name="h1">23sp</dimen>
+    <dimen name="h2">17sp</dimen>
+    <dimen name="h3">16sp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+
+    <dimen name="h1_dialog">27sp</dimen>
+    <dimen name="h3_dialog">21sp</dimen>
+
+    <!-- Video Details -->
+    <dimen name="video_view_height">300dp</dimen>
+
+    <dimen name="player_minimized_width">250dp</dimen>
+    <dimen name="player_minimized_height">230dp</dimen>
+    <dimen name="player_minimized_margin">100dp</dimen>
+    <dimen name="recommendation_item_width">140dp</dimen>
+
+    <!--Rate Us Dialog-->
+    <dimen name="rate_us_header_icon_width">60dp</dimen>
+    <dimen name="rate_us_header_icon_height">60dp</dimen>
+    <dimen name="rate_us_dialog_btn_width">150dp</dimen>
+    <dimen name="rate_us_dialog_btn_height">34dp</dimen>
+    <dimen name="rate_us_header_txt_size">25sp</dimen>
+
+    <!--Feedback Dialog-->
+    <dimen name="feedback_submit_btn_width">200dp</dimen>
+    <dimen name="feedback_comments_max_height">80dp</dimen>
+    <dimen name="dialog_width">380dp</dimen>
+    <dimen name="feedback_margin_top">0dp</dimen>
+
+    <!--Logout Dialog-->
+    <dimen name="logout_btn_height">50dp</dimen>
+
+    <dimen name="otp_dialog_msg">19sp</dimen>
+</resources>

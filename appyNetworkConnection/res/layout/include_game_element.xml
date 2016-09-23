@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/games_list_item__RL_1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dashboard_gridItem_image_back_height"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/border_image"
+        android:visibility="visible" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="Downloading..."
+            android:textColor="@color/app_theme_color"
+            android:textSize="@dimen/dp_12"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/games_list_item__IV_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_gridItem_image_height"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:paddingLeft="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_3"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/locked_overlay_ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_gridItem_image_height"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_3"
+            android:alpha=".50"
+            android:background="@drawable/locked_item_transparent_bg"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:background="@drawable/videos_categories_locked_icon" />
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_1"
+                AppystoreLite:fontName="@string/font_name_passing_notes"
+                android:text="@string/locked_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

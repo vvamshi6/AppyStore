@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <!-- <com.indusnet.view.FensterVideoView
+        android:id="@+id/child_video_play_texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:keepScreenOn="true" />-->
+
+    <!--<com.indusnet.controller.SimpleMediaFensterPlayerController
+        android:id="@+id/child_video_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:animateLayoutChanges="true"
+        android:fitsSystemWindows="true" />-->
+
+    <ImageButton
+        android:id="@+id/media_controller_play_IB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_play_video_big_play_button"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/child_video_thumb_img_IV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <com.appy.store.lite.progress.helper.ProgressBarCircularIndeterminate
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white" >
+    </com.appy.store.lite.progress.helper.ProgressBarCircularIndeterminate>
+    
+    <ImageView
+        android:id="@+id/iv_screenCapture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

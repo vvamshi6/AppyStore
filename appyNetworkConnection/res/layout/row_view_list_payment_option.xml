@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_payment_optn_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/close_select" />
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/tv_payment_optn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@+id/iv_payment_optn_icon"
+            android:text="Credit Card"
+            android:textColor="@color/text_color_dark_gray"
+            android:textSize="@dimen/h2"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/close_select" />
+    </RelativeLayout>
+</LinearLayout>

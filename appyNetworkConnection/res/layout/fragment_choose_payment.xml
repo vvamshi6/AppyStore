@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.appy.store.lite.customviews.CustomTextView
+                android:id="@+id/tv_payment_optn_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_payment_optn_txt"
+                android:textColor="@color/text_color_dark_gray"
+                android:textSize="@dimen/h1"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+
+            <com.appy.store.lite.customviews.ExpandableHeightListView
+                android:id="@+id/list_payment_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_payment_optn_header" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

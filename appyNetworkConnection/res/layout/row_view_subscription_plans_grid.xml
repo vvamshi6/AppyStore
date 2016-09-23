@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/row_plan_plan1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/subscriber_plans_item_bg"
+        android:padding="@dimen/dp_10">
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/subsription_item_header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/subscription_plan_txt"
+            android:textColor="@color/common_header_txt_clr"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/subsription_item_body_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subsription_item_header_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/subscription_plan_body_txt"
+            android:textColor="@color/common_header_txt_clr"
+            android:textSize="@dimen/h2"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+        <com.appy.store.lite.customviews.CustomButton
+            android:id="@+id/btn_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/subscription_done_btn_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/wishlist_details_item_subscribe_btn_bg"
+            android:gravity="center"
+            android:text="@string/subscribtion_done_btn_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h3"
+            android:visibility="visible"
+            AppystoreLite:fontName="@string/font_name_passing_notes" />
+    </RelativeLayout>
+
+</RelativeLayout>

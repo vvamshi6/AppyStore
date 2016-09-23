@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tv_dialog_trial_action_negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Thanks"
+        android:visibility="visible"
+        />
+
+    <com.appy.store.lite.customviews.CustomTextView
+        android:id="@+id/tvActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/logout_btn_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/btn_submit_with_shadow"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h3"
+        android:padding="15dp"
+        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+</LinearLayout>

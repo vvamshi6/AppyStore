@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/parent_dashboard_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20" >
+
+            <include
+                android:id="@+id/include_common_title_subscriptions"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                layout="@layout/common_header_bar"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/inner1_subscriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_common_title_subscriptions"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_25"
+                android:orientation="vertical" >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:text="@string/subscribe_header_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/sp_20" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_fifteen"
+                    android:background="@drawable/subscription_edit_box" >
+
+                    <com.appy.store.lite.customviews.CustomEditText
+                        android:id="@+id/subscription_avaible_user_numberEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:hint="@string/subscription_mobile_number_hint"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:textColor="@color/subscription_edit_phone_no_txt_clr"
+                        android:textColorHint="@color/subscription_edit_phone_no_txt_clr"
+                        android:textSize="@dimen/sp_18" />
+
+                    <ImageView
+                        android:id="@+id/already_subscribed_go_icon_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/subscribe_now_go_arrow_image"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner2_subscriptions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inner1_subscriptions"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_35"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:text="@string/new_subscriber_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/sp_20" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    AppystoreLite:fontName="@string/font_name_passing_notes"
+                    android:text="@string/new_subscription_content_txt"
+                    android:textColor="@color/subscription_edit_phone_no_txt_clr"
+                    android:textSize="@dimen/sp_16" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_fifteen"
+                    android:background="@drawable/subscription_edit_box" >
+
+                    <com.appy.store.lite.customviews.CustomEditText
+                        android:id="@+id/subscription_new_user_numberEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        AppystoreLite:fontName="@string/font_name_passing_notes"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:hint="@string/subscription_mobile_number_hint"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:textColor="@color/subscription_edit_phone_no_txt_clr"
+                        android:textColorHint="@color/subscription_edit_phone_no_txt_clr"
+                        android:textSize="@dimen/sp_16" />
+
+                    <ImageView
+                        android:id="@+id/new_subscription_go_icon_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/subscribe_now_go_arrow_image"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

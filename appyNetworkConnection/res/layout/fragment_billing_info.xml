@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:padding="@dimen/dp_5">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Billing Address different from shipping address-->
+            <LinearLayout
+                android:id="@+id/ll_blng_shpng_difrnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_chkbx_blng_shpn_dfrnt"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@drawable/content_access_checkbox_select"
+                    android:contentDescription="@null" />
+
+                <com.appy.store.lite.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="@string/billng_shppng_dfrnt_txt"
+                    android:textColor="@color/common_header_txt_clr"
+                    android:textSize="@dimen/h3"
+                    AppystoreLite:fontName="@string/font_name_passing_notes" />
+            </LinearLayout>
+
+
+            <!--Name & Mobile No-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <!--Name-->
+                <LinearLayout
+                    android:id="@+id/ll_billng_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_txt"
+                        android:textColor="@color/text_color_dark_gray"
+                        android:textSize="@dimen/h2"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                    <RelativeLayout
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp_25"
+                        android:background="@drawable/subscription_edit_box"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_5">
+
+                        <com.appy.store.lite.customviews.CustomEditText
+                            android:id="@+id/et_billng_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:digits="@string/editTextString"
+                            android:imeOptions="flagNoExtractUi|actionNext"
+                            android:inputType="textPersonName"
+                            android:maxLength="30"
+                            android:padding="@dimen/dp_5"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_dark_gray"
+                            AppystoreLite:fontName="@string/font_name_passing_notes" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--Mobile No-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_toRightOf="@+id/ll_billng_name"
+                    android:gravity="center_vertical">
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mob_txt"
+                        android:textColor="@color/text_color_dark_gray"
+                        android:textSize="@dimen/h2"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                    <RelativeLayout
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:background="@drawable/subscription_edit_box"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_5">
+
+                        <com.appy.store.lite.customviews.CustomEditText
+                            android:id="@+id/et_billng_mob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:imeOptions="flagNoExtractUi|actionNext"
+                            android:inputType="phone"
+                            android:maxLength="12"
+                            android:padding="@dimen/dp_5"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_dark_gray"
+                            AppystoreLite:fontName="@string/font_name_passing_notes" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--Address & City-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <!--Address-->
+                <LinearLayout
+                    android:id="@+id/ll_billng_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_txt"
+                        android:textColor="@color/text_color_dark_gray"
+                        android:textSize="@dimen/h2"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                    <RelativeLayout
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:background="@drawable/subscription_edit_box"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_5">
+
+                        <com.appy.store.lite.customviews.CustomEditText
+                            android:id="@+id/et_billng_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="top|left"
+                            android:imeOptions="flagNoExtractUi|actionNext"
+                            android:maxHeight="100dp"
+                            android:padding="@dimen/dp_5"
+                            android:paddingTop="@dimen/dp_5"
+                            android:textColor="@color/text_color_dark_gray"
+                            AppystoreLite:fontName="@string/font_name_passing_notes" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--City-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_toRightOf="@+id/ll_billng_address"
+                    android:gravity="center_vertical">
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_txt"
+                        android:textColor="@color/text_color_dark_gray"
+                        android:textSize="@dimen/h2"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                    <RelativeLayout
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:background="@drawable/subscription_edit_box"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_5">
+
+                        <com.appy.store.lite.customviews.CustomEditText
+                            android:id="@+id/et_billng_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:digits="@string/editTextString"
+                            android:imeOptions="flagNoExtractUi|actionNext"
+                            android:maxLength="20"
+                            android:padding="@dimen/dp_5"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_dark_gray"
+                            AppystoreLite:fontName="@string/font_name_passing_notes" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--Pincode & State-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <!--Pincoode-->
+                <LinearLayout
+                    android:id="@+id/ll_billng_pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pincode_txt"
+                        android:textColor="@color/text_color_dark_gray"
+                        android:textSize="@dimen/h2"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                    <RelativeLayout
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:background="@drawable/subscription_edit_box"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_5">
+
+                        <com.appy.store.lite.customviews.CustomEditText
+                            android:id="@+id/et_billng_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:imeOptions="flagNoExtractUi|actionNext"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="@dimen/dp_5"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_dark_gray"
+                            AppystoreLite:fontName="@string/font_name_passing_notes" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--State-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_toRightOf="@+id/ll_billng_pincode"
+                    android:gravity="center_vertical">
+
+                    <com.appy.store.lite.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state_txt"
+                        android:textColor="@color/text_color_dark_gray"
+                        android:textSize="@dimen/h2"
+                        AppystoreLite:fontName="@string/font_name_passing_notes" />
+
+                    <RelativeLayout
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:background="@drawable/subscription_edit_box"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_5">
+
+                        <com.appy.store.lite.customviews.CustomEditText
+                            android:id="@+id/et_billng_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:digits="@string/editTextString"
+                            android:imeOptions="flagNoExtractUi|actionNext"
+                            android:maxLength="20"
+                            android:padding="@dimen/dp_5"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_dark_gray"
+                            AppystoreLite:fontName="@string/font_name_passing_notes" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Continue Button-->
+            <com.appy.store.lite.customviews.CustomButton
+                android:id="@+id/btn_continue"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/subscription_done_btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/wishlist_details_item_subscribe_btn_bg"
+                android:gravity="center"
+                android:text="@string/continue_btn_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/h3"
+                android:visibility="visible"
+                AppystoreLite:fontName="@string/font_name_passing_notes" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

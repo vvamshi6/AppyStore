@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppystoreLite="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/appy_nodata_found" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10" >
+
+        <com.appy.store.lite.customviews.CustomTextView
+            android:id="@+id/dashboard_video_category_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            AppystoreLite:fontName="@string/font_name_passing_notes"
+            android:text="@string/dashboard_video_category"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/h2" />
+
+        <GridView
+            android:id="@+id/dashboard_videos_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_five"
+            android:clickable="true"
+            android:horizontalSpacing="@dimen/dashboard_grid_horizontal_spacing"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:scrollbarThumbVertical="@drawable/scrollbar_custom"
+            android:verticalSpacing="@dimen/dashboard_video_grid_vertical_spacing" >
+        </GridView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/appy_progressbar" />
+
+</RelativeLayout>
