@@ -1,6 +1,19 @@
-<center>
-<div ng-repeat = "x in greeting" class = "col-sm-3">
-<img ng-src = '{{x.image_path}}'/>
-<div>{{x.title}}</div>
+<!-- <center>
+  <div ng-repeat = "x in greeting" class = "col-sm-3">
+    <img ng-src = '{{x.image_path}}'/>
+    <div>{{x.title}}</div>
+  </div>
+</center> -->
+<div>
+<div ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class = "col-sm-3">
+  <img ng-src = '{{x.image_path}}'/>
+  <div>{{x.title}}</div>
 </div>
-</center>
+<footer>
+  <button ng-click="pagination.prevPage()" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
+  <button ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
+</footer>
+</div>
+
+
+<!-- ui-sref="videos({pcatid:slide.pcatid,catid:slide.catid})" -->

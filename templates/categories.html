@@ -2,7 +2,7 @@
     ng-model="slides" options = "options">
     <div carousel3d-slide ng-repeat="slide in slides">
         <figure>
-            <a><img ng-src="{{slide.src}}" ng-if = "carousel3d.getCurrentIndex() === $index" ui-sref="videos({pcatid:slide.pcatid,catid:slide.catid})"alt=""/></a>
+            <a><img ng-src="{{slide.src}}" ng-if = "carousel3d.getCurrentIndex() === $index" ui-sref="videos({pcatid:slide.pcatid,catid:slide.catid,offset:slide.offset})"alt=""/></a>
               <img ng-if = "carousel3d.getCurrentIndex() !== $index" ng-src="{{slide.src}}"/>
             <figcaption ng-bind="slide.caption"></figcaption>
         </figure>
