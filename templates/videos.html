@@ -4,16 +4,17 @@
     <div>{{x.title}}</div>
   </div>
 </center> -->
-<div>
-<div ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class = "col-sm-3">
-  <img ng-src = '{{x.image_path}}'/>
-  <div>{{x.title}}</div>
+<!-- <ul class="pagination"> -->
+  <!-- <li><button ng-click = "pagination.nextPage()" >❮</button></li> -->
+<div  ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()">
+    <center>
+        <div style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+            <a><img style = 'border-radius: 12%;' ng-src='{{x.image_path}}' width="250" /><br></a>&nbsp&nbsp&nbsp
+            <p>{{x.title}}</p><br>
+        </div>
+    </center>
 </div>
-<footer>
-  <button ng-click="pagination.prevPage()" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
-  <button ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
-</footer>
-</div>
-
-
-<!-- ui-sref="videos({pcatid:slide.pcatid,catid:slide.catid})" -->
+<center>
+<button class = "button" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">❮</button>
+<button class = "button" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">❯</button>
+</center>

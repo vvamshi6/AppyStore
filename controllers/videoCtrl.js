@@ -2,7 +2,7 @@ angular.module('appyStore')
 .controller('videoCtrl', function($scope, $http,$stateParams,contentService,Pagination) {
     // var promise = contentService.getData();
   console.log('videoCtrl');
-  $scope.pagination = Pagination.getNew(9);
+  $scope.pagination = Pagination.getNew(4);
   var pcatid = $stateParams.pcatid;
   var catid =  $stateParams.catid;
   $scope.pcatid = pcatid;

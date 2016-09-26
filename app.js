@@ -1,4 +1,4 @@
-angular.module('appyStore', ['ui.router','angular-carousel-3d','simplePagination'])
+angular.module('appyStore', ['ui.router','angular-carousel-3d','simplePagination','ngTouch'])
     .config(function($stateProvider, $urlRouterProvider) {
       console.log('config');
         $urlRouterProvider.otherwise('/categories');
