@@ -138,3 +138,12 @@ a {
 .videoIcon.playS {
     /*background-position: 0 -2495px;*/
 }
+.moreIcon{
+  background-image : url('Button_27_more-min.png')
+  height: 48px;
+  width: 88px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

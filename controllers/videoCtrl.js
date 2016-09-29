@@ -2,27 +2,46 @@ angular.module('appyStore')
 .controller('videoCtrl', function($scope, $http,$stateParams,CategoryService,Pagination,$sce) {
     // var promise = contentService.getData();
   console.log('videoCtrl');
+  var a = 1;
+  a = a+1;
+  console.log(a);
   $scope.pagination = Pagination.getNew(4);
   var pcatid = $stateParams.pcatid;
   var catid =  $stateParams.catid;
+
   $scope.pcatid = pcatid;
   $scope.catid = catid;
   if($stateParams.poster){
-$scope.poster = $stateParams.poster;
-}
+    $scope.poster = $stateParams.poster;
+  }
   if($stateParams.url){
     var url = $stateParams.url;
     url = $sce.trustAsResourceUrl(url);
     $scope.url = url;
   }
-  $scope.changeUrl = function(url){
-    $scope.url1 = url;
-    return $scope.url1;
-  }
-  function changeUrl(url){
-    $scope.url1 = url;
-  }
+  $scope.changeUrl = function(url,poster){
+    console.log(url);
+    url = $sce.trustAsResourceUrl(url);
+    $scope.url = url;
 
+    var video = document.getElementById("myVideo")
+    console.log(poster);
+    // video.attr('poster', poster);
+    isSupp = video.canPlayType("video/mp4");
+      if (isSupp == "") {
+      video.src = "movie.ogg";
+  } else {
+      video.src = url;
+      video.poster = poster;
+  }
+  video.load();
+    // var video = angular.element('#myVideo');
+    // angular.element(document.querySelector('#id'));
+    // video.src = url;
+    if(video){
+      console.log("Id is found");
+    }
+  }
   // console.log(pcatid,catid);
   // console.log(CategoryService.getData(pcatid,catid));
   // console.log($stateParams.pcatid);

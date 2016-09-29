@@ -19,12 +19,8 @@ angular.module('appyStore', ['ui.router','angular-carousel-3d','simplePagination
               controller : 'videoCtrl'
             })
             .state('player',{
-              url:'/player/?url?poster?pcatid?catid',
+              url:'/player?url?poster?pcatid?catid',
               templateUrl:'templates/play.html',
               controller:'videoCtrl'
-            })
-            .state('categories.player.abc',{
-              url:'/abc',
-              templateUrl:'templates/videoplayer.html',
             })
     });

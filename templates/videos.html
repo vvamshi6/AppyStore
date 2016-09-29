@@ -12,12 +12,12 @@
   <!-- <div class="card card-3"></div> -->
   <!-- <div class="card card-4"></div> -->
   <!-- <div class="card card-5"></div> -->
-  <div   ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()">
+  <div ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()">
     <center>
         <div class = "col-md-3" style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
   <div class="card card-1"><a ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()">
       <img ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()"
-        style = 'border-radius: 12%;' ng-src='{{x.image_path}}' width="250"/><span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class = "icon videoIcon playS"></span>
+        style = 'border-radius: 10%;' ng-src='{{x.image_path}}' width="250"/><span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class = "icon videoIcon playS"></span>
     </a>
       <p>{{x.title}}</p><br>
   </div>
