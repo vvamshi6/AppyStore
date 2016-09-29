@@ -1,6 +1,6 @@
 angular.module('appyStore')
-.controller('categoryCtrl', function($scope,$http,$q) {
-  // console.log(CategoryService.getData(123,2));
+.controller('categoryCtrl', function($scope,$http,$q,CategoryService) {
+  console.log(CategoryService.getData(185,195));
   var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getCategoryList&content_type=videos&limit_start=0&age=1.5&incl_age=5';
     $http.get('http://beta.appystore.in/appy_app/appyApi_handler.php?method=getCategoryList&content_type=videos&limit_start=0&age=1.5&incl_age=5'
     ,{headers:{'Access-Control-Allow-Origin': 'true','Access-Control-Allow-Methods': 'PUT, GET, POST','Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept','X_APPY_USERID':'290903782','X_APPY_API_KEY':'gh610rt23eqwpll'}}).
@@ -14,7 +14,7 @@ angular.module('appyStore')
            visible: 7,
            perspective: 35,
            startSlide: 0,
-           border: 1,
+           border: 0,
            dir: 'rtl',
            width: 500,
            height: 320,

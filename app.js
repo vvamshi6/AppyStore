@@ -1,4 +1,4 @@
-angular.module('appyStore', ['ui.router','angular-carousel-3d','simplePagination','ngTouch'])
+angular.module('appyStore', ['ui.router','angular-carousel-3d','simplePagination','ngTouch','ui.bootstrap'])
     .config(function($stateProvider, $urlRouterProvider) {
       console.log('config');
         $urlRouterProvider.otherwise('/categories');
@@ -17,5 +17,14 @@ angular.module('appyStore', ['ui.router','angular-carousel-3d','simplePagination
               url: '/?pcatid?catid',
               templateUrl : 'templates/videos.html',
               controller : 'videoCtrl'
+            })
+            .state('player',{
+              url:'/player/?url?poster?pcatid?catid',
+              templateUrl:'templates/play.html',
+              controller:'videoCtrl'
+            })
+            .state('categories.player.abc',{
+              url:'/abc',
+              templateUrl:'templates/videoplayer.html',
             })
     });

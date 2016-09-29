@@ -1,5 +1,5 @@
 angular.module('appyStore')
-.controller('videoCtrl', function($scope, $http,$stateParams,contentService,Pagination) {
+.controller('videoCtrl', function($scope, $http,$stateParams,CategoryService,Pagination,$sce) {
     // var promise = contentService.getData();
   console.log('videoCtrl');
   $scope.pagination = Pagination.getNew(4);
@@ -7,18 +7,30 @@ angular.module('appyStore')
   var catid =  $stateParams.catid;
   $scope.pcatid = pcatid;
   $scope.catid = catid;
+  if($stateParams.poster){
+$scope.poster = $stateParams.poster;
+}
+  if($stateParams.url){
+    var url = $stateParams.url;
+    url = $sce.trustAsResourceUrl(url);
+    $scope.url = url;
+  }
+  $scope.changeUrl = function(url){
+    $scope.url1 = url;
+    return $scope.url1;
+  }
+  function changeUrl(url){
+    $scope.url1 = url;
+  }
+
   // console.log(pcatid,catid);
   // console.log(CategoryService.getData(pcatid,catid));
   // console.log($stateParams.pcatid);
   // console.log($stateParams.catid);
   // var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=10&offset=0&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
-  var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=133&offset=0&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
-
-
-
+  var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=200&offset=0&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
     // var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=10&offset='+offset+'&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
     console.log(url);
-
     $http.get(url
     ,{headers:{'Access-Control-Allow-Origin': 'true','Access-Control-Allow-Methods': 'PUT, GET, POST','Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     'X_APPY_USERID':'290903782','X_APPY_API_KEY':'gh610rt23eqwpll',

@@ -6,15 +6,27 @@
 </center> -->
 <!-- <ul class="pagination"> -->
   <!-- <li><button ng-click = "pagination.nextPage()" >❮</button></li> -->
-<div  ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()">
+  <!-- <div class="card"></div> -->
+
+  <!-- <div class="card card-2"></div> -->
+  <!-- <div class="card card-3"></div> -->
+  <!-- <div class="card card-4"></div> -->
+  <!-- <div class="card card-5"></div> -->
+  <div   ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()">
     <center>
-        <div style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
-            <a><img style = 'border-radius: 12%;' ng-src='{{x.image_path}}' width="250" /><br></a>&nbsp&nbsp&nbsp
-            <p>{{x.title}}</p><br>
-        </div>
+        <div class = "col-md-3" style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+  <div class="card card-1"><a ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()">
+      <img ng-swipe-right = "pagination.prevPage()" ng-swipe-left =  "pagination.nextPage()"
+        style = 'border-radius: 12%;' ng-src='{{x.image_path}}' width="250"/><span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class = "icon videoIcon playS"></span>
+    </a>
+      <p>{{x.title}}</p><br>
+  </div>
+    </div>
     </center>
 </div>
-<center>
-<button class = "button" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">❮</button>
-<button class = "button" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">❯</button>
+<div>
+  <center>
+  <button class = "button" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0">Previous</button>
+  <button class = "button" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages">Next</button>
 </center>
+</div>

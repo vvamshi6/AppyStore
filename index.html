@@ -3,18 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>AppyStore</title>
-<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.5.8/angular-touch.min.js'></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
 <script src="styles/simplePagination.js"></script>
-<link rel="stylesheet" href="/styles/bootstrap.css" media="screen" title="no title" charset="utf-8">
+<!-- <link rel="stylesheet" href="/styles/bootstrap.css" media="screen" title="no title" charset="utf-8"> -->
 <link rel="stylesheet" href="styles/myStyles.css" media="screen" title="no title" charset="utf-8">
 <link href="styles/carousel-3d.css" rel="stylesheet" type="text/css" />
+<link href="styles/media.css"/>
 <!-- <link rel="stylesheet" href="/styles/grid.css" media="screen" title="no title" charset="utf-8"> -->
 </head>
 <body class = 'img-responsive' background = 'BG-min.png'>
@@ -37,7 +39,7 @@
   <!-- <div> -->
 </nav>
 <div ng-app = 'appyStore'>
-  <ui-view></ui-view>
+  <ui-view>
   <!-- <div ui-view="footer"></div> -->
 </div>
 </body>
@@ -45,13 +47,8 @@
 <script src = 'services/CategoryService.js'></script>
 <script src='controllers/categoryCtrl.js'></script>
 <script src = 'controllers/videoCtrl.js'></script>
-<!-- <script type="text/javascript">
- $(document).ready(function(){
-  $("#myModal").modal('show');
- });
- var span = document.getElementsByClassName("close")[0];
-</script> -->
+<script src = "controllers/playerCtrl.js"></script>
 <script src = 'controllers/carousel-3d.js'></script>
 <script src = 'controllers/angular-swipe.js'></script>
-<!-- <script src = 'controllers/swiping.js'></script> -->
+<script src = 'controllers/media.js'></script>
 </html>
