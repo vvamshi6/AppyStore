@@ -1,0 +1,35 @@
+<!--
+* FileName:play.html
+* CreatedBy: Vamsee
+* Date :22-09-2016
+* Purpose : Video player and content list
+ -->
+<!--  Html5 Video player for playing videos-->
+<center>
+    <div>
+        <video id='myVideo' width="400" controls poster="{{poster}}">
+            <source ng-src="{{url}}" type="video/mp4">
+        </video>
+    </div>
+</center>
+<!-- Displaying the Content List -->
+<div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
+    <center>
+        <div class="col-md-3" style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+            <div class="card card-1">
+                <a ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
+                    <img ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()" style='border-radius: 12%;' ng-src='{{x.image_path}}' width="250" /><span ng-click="changeUrl(x.dnld_url,x.image_path)" class="icon videoIcon playS moreIcon"></span>
+                </a>
+                <p>{{x.title}}</p>
+                <br>
+            </div>
+        </div>
+    </center>
+</div>
+<div>
+  <!-- Navigation buttons for next and previous pages of  the list -->
+    <center>
+        <button class="button" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0">Previous</button>
+        <button class="button" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages">Next</button>
+    </center>
+</div>

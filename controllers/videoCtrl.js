@@ -1,16 +1,23 @@
+/*
+* FileName:videoCtrl.js
+* CreatedBy: Vamsee
+* Date :16-10-2016
+* Purpose : Creating appyStore using AngularJS
+*/
+
 angular.module('appyStore')
+/*Creating the videoCtrl for showing the content list*/
 .controller('videoCtrl', function($scope, $http,$stateParams,CategoryService,Pagination,$sce) {
-    // var promise = contentService.getData();
   console.log('videoCtrl');
-  var a = 1;
-  a = a+1;
-  console.log(a);
+  /* Pagination for dividing list of items */
   $scope.pagination = Pagination.getNew(4);
+  /*Taking state params for different ids*/
   var pcatid = $stateParams.pcatid;
   var catid =  $stateParams.catid;
-
+  /*Adding the stateparams to the scope object*/
   $scope.pcatid = pcatid;
   $scope.catid = catid;
+  /*Reading the stateparams object*/
   if($stateParams.poster){
     $scope.poster = $stateParams.poster;
   }
@@ -19,14 +26,13 @@ angular.module('appyStore')
     url = $sce.trustAsResourceUrl(url);
     $scope.url = url;
   }
+  /* ChangeUrl function for changing the poster and url */
   $scope.changeUrl = function(url,poster){
     console.log(url);
     url = $sce.trustAsResourceUrl(url);
     $scope.url = url;
-
     var video = document.getElementById("myVideo")
     console.log(poster);
-    // video.attr('poster', poster);
     isSupp = video.canPlayType("video/mp4");
       if (isSupp == "") {
       video.src = "movie.ogg";
@@ -35,20 +41,12 @@ angular.module('appyStore')
       video.poster = poster;
   }
   video.load();
-    // var video = angular.element('#myVideo');
-    // angular.element(document.querySelector('#id'));
-    // video.src = url;
     if(video){
       console.log("Id is found");
     }
   }
-  // console.log(pcatid,catid);
-  // console.log(CategoryService.getData(pcatid,catid));
-  // console.log($stateParams.pcatid);
-  // console.log($stateParams.catid);
-  // var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=10&offset=0&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
+/*Rest api url*/
   var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=200&offset=0&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
-    // var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=10&offset='+offset+'&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
     console.log(url);
     $http.get(url
     ,{headers:{'Access-Control-Allow-Origin': 'true','Access-Control-Allow-Methods': 'PUT, GET, POST','Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',

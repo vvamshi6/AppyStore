@@ -1,8 +1,15 @@
+<!--
+* FileName:index.html
+* CreatedBy: Vamsee
+* Date :15-09-2016
+* Purpose : Main file for view in ionic
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>AppyStore</title>
+<!--  Adding the dependency files-->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -38,11 +45,13 @@
     </div> -->
   <!-- <div> -->
 </nav>
+<!-- UI-Router -->
 <div ng-app = 'appyStore'>
   <ui-view>
   <!-- <div ui-view="footer"></div> -->
 </div>
 </body>
+<!-- Adding the controller and services -->
 <script src='app.js'></script>
 <script src = 'services/CategoryService.js'></script>
 <script src='controllers/categoryCtrl.js'></script>
@@ -51,6 +60,5 @@
 <script src = 'controllers/carousel-3d.js'></script>
 <script src = 'controllers/angular-swipe.js'></script>
 <script src = 'controllers/media.js'></script>
-
 <script src = 'controllers/playerVudeoCtrl.js'></script>
 </html>

@@ -1,0 +1,28 @@
+<!--
+* FileName:videos.html
+* CreatedBy: Vamsee
+* Date :01-09-2016
+* Purpose : User interface for displaying Contentlist
+ -->
+ <!-- Displaying the Content List -->
+<div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
+    <center>
+        <div class="col-md-3" style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+            <div class="card card-1">
+                <a ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
+                    <img ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()" style='border-radius: 10%;' ng-src='{{x.image_path}}' width="250" />
+                    <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class="icon videoIcon playS"></span>
+                </a>
+                <p>{{x.title}}</p>
+                <br>
+            </div>
+        </div>
+    </center>
+</div>
+<div>
+  <!-- Navigation buttons for next and previous pages of  the list -->
+    <center>
+        <button class="button" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0">Previous</button>
+        <button class="button" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages">Next</button>
+    </center>
+</div>

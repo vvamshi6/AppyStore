@@ -1,17 +1,17 @@
+/*
+* FileName:playerCtrl.js
+* CreatedBy: Vamsee
+* Date :16-10-2016
+* Purpose : Creating appyStore using AngularJS
+*/
+
 angular.module('appyStore')
+/*Creating the playerCtrl for the ionic app*/
 .controller('playerCtrl',function($scope,$stateParams,$sce){
-  // $scope.trusted = function(url) {
-  //       return $sce.trustAsResourceUrl(url);
-  //   }
-  console.log($stateParams.pcatid);
-  console.log($stateParams.catid);
+  /*Reading the poster from the Stateparams*/
 $scope.poster = $stateParams.poster;
     var url = $stateParams.url;
     url = $sce.trustAsResourceUrl(url);
   $scope.url = url;
-  function changeUrl(url){
-    $scope.url1 = url;
-  }
-  // $sce.trustAsResourceUrl($scope.url);
   console.log($stateParams.url);
 })
