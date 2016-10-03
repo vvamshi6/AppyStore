@@ -4,6 +4,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+   background-attachment: fixed;
 }
 .float_center {
   float: right;
