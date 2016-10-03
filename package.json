@@ -12,7 +12,6 @@
     "https": "^1.0.0"
   },
   "devDependencies": {},
-  "engines":{"node":"v6.4.0"},
   "scripts": {
     "start": "node index.js",
      "postinstall": "./node_modules/bower/bin/bower --allow-root install",
