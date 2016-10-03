@@ -12,21 +12,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--  Adding the dependency files-->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.5.8/angular-touch.min.js'></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
-<script src="styles/simplePagination.js"></script>
-<!-- <link rel="stylesheet" href="/styles/bootstrap.css" media="screen" title="no title" charset="utf-8"> -->
 <link rel="stylesheet" href="styles/myStyles.css" media="screen" title="no title" charset="utf-8">
-<link href="styles/carousel-3d.css" rel="stylesheet" type="text/css" />
-<link href="styles/media.css"/>
-<!-- <link rel="stylesheet" href="/styles/grid.css" media="screen" title="no title" charset="utf-8"> -->
+<link href="bower_components/angular-carousel-3d/dist/carousel-3d.css" rel="stylesheet" type="text/css"/>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src = 'bower_components/angular-touch/angular-touch.min.js'></script>
+<script src = 'bower_components/angular-carousel-3d/dist/carousel-3d.js'></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/ng-simplePagination/simplePagination.js"></script>
 </head>
 <body>
 <nav>
@@ -50,7 +47,6 @@
 <!-- UI-Router -->
 <div ng-app = 'appyStore'>
   <ui-view>
-  <!-- <div ui-view="footer"></div> -->
 </div>
 </body>
 <!-- Adding the controller and services -->
@@ -59,8 +55,6 @@
 <script src='controllers/categoryCtrl.js'></script>
 <script src = 'controllers/videoCtrl.js'></script>
 <script src = "controllers/playerCtrl.js"></script>
-<script src = 'controllers/carousel-3d.js'></script>
 <script src = 'controllers/angular-swipe.js'></script>
-<script src = 'controllers/media.js'></script>
 <script src = 'controllers/playerVudeoCtrl.js'></script>
 </html>
