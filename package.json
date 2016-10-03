@@ -1,10 +1,8 @@
 {
-  "name": "appystore",
+  "name": "appstore",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/vvamshi6/AppyStore/issues"
   },
-  "homepage": "https://github.com/vvamshi6/AppyStore#readme"
+  "homepage": "https://github.com/vvamshi6/AppyStore#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
+  }
 }
