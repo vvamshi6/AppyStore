@@ -1,0 +1,21 @@
+{
+  "name": "AppyStore",
+  "authors": [
+    "vvamshi6 <vvamshi6@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vjs-video": "^0.1.6"
+  }
+}
