@@ -3,8 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "6.4.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "http": "^0.0.0",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/bower/bin/bower --allow-root install"
   },
   "repository": {
     "type": "git",
@@ -15,10 +29,5 @@
   "bugs": {
     "url": "https://github.com/vvamshi6/AppyStore/issues"
   },
-  "homepage": "https://github.com/vvamshi6/AppyStore#readme",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "cors": "^2.8.1",
-    "express": "^4.14.0"
-  }
+  "homepage": "https://github.com/vvamshi6/AppyStore#readme"
 }
