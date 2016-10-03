@@ -4,8 +4,7 @@
 var express = require('express')
 ,app = express()
 ,http = require('http').Server(app)
-// ,io = require('socket.io')(http)
-,port = process.env.PORT||4001
+,port = process.env.PORT||4002
 ,bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(express.static('./app'));
