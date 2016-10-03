@@ -1,7 +1,6 @@
 {
   "name": "appstore",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "engines": {
     "node": "6.4.0"
@@ -29,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/vvamshi6/AppyStore/issues"
   },
-  "homepage": "https://github.com/vvamshi6/AppyStore#readme"
+  "homepage": "https://github.com/vvamshi6/AppyStore#readme",
+  "description": ""
 }
