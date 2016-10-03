@@ -4,8 +4,9 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    height: 100vh;
    background-attachment: fixed;
+   overflow: scroll;
 }
 .float_center {
   float: right;
