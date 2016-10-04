@@ -17,6 +17,7 @@ angular.module('appyStore')
   /*Adding the stateparams to the scope object*/
   $scope.pcatid = pcatid;
   $scope.catid = catid;
+  $scope.caption = $stateParams.caption;
   /*Reading the stateparams object*/
   if($stateParams.poster){
     $scope.poster = $stateParams.poster;

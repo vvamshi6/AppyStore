@@ -9,8 +9,11 @@ angular.module('appyStore', ['ui.router', 'angular-carousel-3d', 'simplePaginati
     /*config method for routing and differnet states in routing*/
     .config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         console.log('config');
-        $httpProvider.defaults.useXDomain = true;
-        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+    $httpProvider.defaults.useXDomain = false;
+    $httpProvider.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+    delete $httpProvider.defaults.headers.common['Content-Type, X-Requested-With'];
         /*Default url for the Routing*/
         $urlRouterProvider.otherwise('/categories');
         $stateProvider
@@ -22,7 +25,7 @@ angular.module('appyStore', ['ui.router', 'angular-carousel-3d', 'simplePaginati
             })
             /*Videos state for displaying the Content/videos list*/
             .state('videos', {
-                url: '/?pcatid?catid',
+                url: '/?pcatid?catid?caption',
                 templateUrl: 'templates/Videos.html',
                 controller: 'videoCtrl'
             })

@@ -5,23 +5,34 @@
 * Purpose : User interface for displaying Contentlist
  -->
 <!-- Displaying the Content List -->
-<div>
-  <img ui-sref = "categories" ng-src = "Optimised_icons_all-sizes/drawable-mdpi/Button_14_back-min.png">
-  <img style = "float:right" ng-src = "Optimised_icons_all-sizes/drawable-mdpi/Button_6_search-min.png">
-</div>
+<div ng-include = "'templates/nav.html'"></div>
 <div class  = "container">
-<div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
+<!-- <div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()"> -->
     <center>
-        <div class="img col-md-3" ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+        <!-- <div class="img col-md-3" ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
             <div class="card card-1">
                 <a ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
-                    <img style="display:inline-block "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
+                    <img class = "img1" style="display:inline-block "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
                     <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class="icon videoIcon playS"></span>
                 </a>
                 <p>{{x.title}}</p>
                 <br>
             </div>
-        </div>
+        </div> -->
+        <div class = "myClass">
+          <div class = "row">
+            <div class = "span5" ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+              <div class="card card-1">
+                  <a >
+                      <img class = "img1" style="display:inline-block "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
+                      <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class="icon videoIcon playS"></span>
+                  </a>
+                  <p>{{x.title}}</p>
+                  <br>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
     </center>
 </div>
 </div>
