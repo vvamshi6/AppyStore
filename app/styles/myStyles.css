@@ -181,3 +181,8 @@ div.myClass {
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (max-width: 480px) {
+    #myVideo{
+      width:290px;
+    }
+}
