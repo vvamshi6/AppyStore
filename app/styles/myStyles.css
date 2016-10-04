@@ -6,6 +6,7 @@ body {
     background-size: cover;
     height: 100vh;
    background-attachment: fixed;
+   /*overflow-y: hidden;*/
    overflow: scroll;
 }
 .float_center {
@@ -118,7 +119,6 @@ a {
     transition: 0.3s;
 }
 .button {
-
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -129,9 +129,8 @@ a {
     font-size: 16px;
 }
 .icon {
-  background-image :url('Button_29_play_icon_white-min.png');
+  background-image :url('Optimised_icons_all-sizes/drawable-hdpi/Button_29_play_icon_white-min.png');
   background-repeat : no-repeat;
-
 }
 .videoIcon {
     top:101px; left:5px;
@@ -158,11 +157,17 @@ a {
   bottom: 0;
 }
 #prevAndnext{
-  top:300px; left:25px;
+  top:10px; left:25px;
   height: 48px;
   width: 88px;
   display: inline-block;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.img
+{
+    float: left;
+    padding-right: 0px;
 }

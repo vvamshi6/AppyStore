@@ -7,8 +7,10 @@
 /*Creating appystore module by using module function and adding required dependencies*/
 angular.module('appyStore', ['ui.router', 'angular-carousel-3d', 'simplePagination', 'ngTouch', 'ui.bootstrap'])
     /*config method for routing and differnet states in routing*/
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         console.log('config');
+        $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
         /*Default url for the Routing*/
         $urlRouterProvider.otherwise('/categories');
         $stateProvider
