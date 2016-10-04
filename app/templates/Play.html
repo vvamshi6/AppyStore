@@ -15,15 +15,19 @@
 </center>
 <!-- Displaying the Content List -->
 <div class = "container">
-<div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
+<!-- <div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
     <center>
-        <div class="img col-md-3" style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+        <div class="img col-md-3" style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'> -->
+        <div class = "myClass">
+          <div class = "row">
+            <div class = "span5" ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
             <div class="card card-1">
-                <a ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
+                <a>
                     <img style='border-radius: 12%;' ng-src='{{x.image_path}}' width="250" /><span ng-click="changeUrl(x.dnld_url,x.image_path)" class="icon videoIcon playS moreIcon"></span>
                 </a>
                 <p>{{x.title}}</p>
                 <br>
+              </div>
             </div>
         </div>
     </center>
