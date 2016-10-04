@@ -181,8 +181,29 @@ div.myClass {
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (max-width: 480px) {
+.img1{
+  img{
+    width:250px;
+    border-radius: 10%;
+  }
+  /*width:250px:*/
+}
+@media screen and (max-width: 640px) {
     #myVideo{
-      width:290px;
+      width:350px;
     }
+    .card{
+      width: 180px;
+      height:150px;
+    }
+    .img1{
+      width:150px;
+      height:95px;
+    }
+  .videoIcon{
+    background-image :url('Optimised_icons_all-sizes/drawable-mdpi/Button_29_play_icon_white-min.png');
+    top:70px; left:4px;
+    width:100px;
+    height:50px;
+  }
 }
