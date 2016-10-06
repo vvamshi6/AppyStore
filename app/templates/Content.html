@@ -29,10 +29,10 @@
             <div  class = "span5" ng-repeat="x in data | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
               <div class="card card-1">
                   <a>
-                      <img class = "img1" style="display:inline-block "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
+                      <img class = "img1" style="display:inline-block;border-radius:10px "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
                       <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid,count:count})" class="icon videoIcon playS"></span>
                   </a>
-                  <p>{{x.title}}</p>
+                  <p class = "test2">{{x.title}}</p>
                   <br>
               </div>
             </div>

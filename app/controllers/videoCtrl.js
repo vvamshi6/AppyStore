@@ -10,7 +10,7 @@ angular.module('appyStore')
 .controller('videoCtrl', function($scope, $http,$stateParams,CategoryService,Pagination,$sce) {
   console.log('videoCtrl');
   /* Pagination for dividing list of items */
-  $scope.pagination = Pagination.getNew(10);
+  $scope.pagination = Pagination.getNew(4);
   /*Taking state params for different ids*/
   var pcatid = $stateParams.pcatid;
   var catid =  $stateParams.catid;
