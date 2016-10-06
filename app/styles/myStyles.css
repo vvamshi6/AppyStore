@@ -11,7 +11,6 @@ body {
 }
 .float_center {
   float: right;
-
   position: relative;
   left: -50%; /* or right 50% */
   text-align: center;
@@ -188,7 +187,7 @@ div.myClass {
   }
   /*width:250px:*/
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
     #myVideo{
       width:350px;
     }
@@ -205,5 +204,8 @@ div.myClass {
     top:70px; left:4px;
     width:100px;
     height:50px;
+  }
+  #myVideo{
+    top:35px;
   }
 }

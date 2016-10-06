@@ -10,10 +10,12 @@ angular.module('appyStore')
 .controller('videoCtrl', function($scope, $http,$stateParams,CategoryService,Pagination,$sce) {
   console.log('videoCtrl');
   /* Pagination for dividing list of items */
-  $scope.pagination = Pagination.getNew(4);
+  $scope.pagination = Pagination.getNew(10);
   /*Taking state params for different ids*/
   var pcatid = $stateParams.pcatid;
   var catid =  $stateParams.catid;
+  var count = $stateParams.count;
+  $scope.count = count;
   /*Adding the stateparams to the scope object*/
   $scope.pcatid = pcatid;
   $scope.catid = catid;
@@ -27,6 +29,14 @@ angular.module('appyStore')
     url = $sce.trustAsResourceUrl(url);
     $scope.url = url;
   }
+  $scope.images = [1, 2, 3, 4, 5, 6, 7, 8];
+
+  $scope.loadMore = function() {
+  var last = $scope.images[$scope.images.length - 1];
+    for(var i = 1; i <= 8; i++) {
+      $scope.images.push(last + i);
+    }
+  };
   /* ChangeUrl function for changing the poster and url */
   $scope.changeUrl = function(url,poster){
     console.log(url);
@@ -47,7 +57,7 @@ angular.module('appyStore')
     }
   }
 /*Rest api url*/
-  var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=200&offset=0&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
+  var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit='+count+'&offset=0&catid='+catid+'&pcatid='+pcatid+'&age=1.5&incl_age=5';
     console.log(url);
     $http.get(url
     ,{headers:{'Access-Control-Allow-Origin': 'true','Access-Control-Allow-Methods': 'PUT, GET, POST','Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
@@ -60,8 +70,8 @@ angular.module('appyStore')
     }})
     .then(function(response) {
           // console.log(response.data);
-            $scope.greeting = response.data.Responsedetails.data_array;
-            console.log($scope.greeting);
-            $scope.pagination.numPages = Math.ceil($scope.greeting.length/$scope.pagination.perPage);
+            $scope.data = response.data.Responsedetails.data_array;
+            console.log($scope.data);
+            $scope.pagination.numPages = Math.ceil($scope.data.length/$scope.pagination.perPage);
         });
 });

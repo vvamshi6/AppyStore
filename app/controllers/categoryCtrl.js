@@ -30,8 +30,8 @@ angular.module('appyStore')
            startSlide: 0,
            border: 0,
            dir: 'rtl',
-           width: 350,
-           height: 200,
+           width: 400,
+           height: 250,
            space: 220,
            clicking:true,
            scrolling:true,
@@ -40,7 +40,7 @@ angular.module('appyStore')
        };
             angular.forEach($scope.result,function(i){
               $scope.slides.push({'src': i.image_path['50x50'],
-              'caption':i.category_name,'catid':i.category_id,'pcatid':i.parent_category_id});
+              'caption':i.category_name,'catid':i.category_id,'pcatid':i.parent_category_id,'count':i.content_count});
             })
             console.log($scope.slides);
             });

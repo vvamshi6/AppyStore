@@ -5,7 +5,7 @@
 * Purpose : Main Routing application
 */
 /*Creating appystore module by using module function and adding required dependencies*/
-angular.module('appyStore', ['ui.router', 'angular-carousel-3d', 'simplePagination', 'ngTouch', 'ui.bootstrap'])
+angular.module('appyStore', ['ui.router', 'angular-carousel-3d', 'simplePagination', 'ngTouch', 'ui.bootstrap','infinite-scroll'])
     /*config method for routing and differnet states in routing*/
     .config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         console.log('config');
@@ -25,13 +25,13 @@ angular.module('appyStore', ['ui.router', 'angular-carousel-3d', 'simplePaginati
             })
             /*Videos state for displaying the Content/videos list*/
             .state('videos', {
-                url: '/?pcatid?catid?caption',
-                templateUrl: 'templates/Videos.html',
+                url: '/?pcatid?catid?caption?count',
+                templateUrl: 'templates/Content.html',
                 controller: 'videoCtrl'
             })
             /*player state for playing the videos*/
             .state('player', {
-                url: '/player?url?poster?pcatid?catid',
+                url: '/player?url?poster?pcatid?catid?count',
                 templateUrl: 'templates/Play.html',
                 controller: 'videoCtrl'
             })

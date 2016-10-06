@@ -6,6 +6,7 @@
  -->
 <!--  Html5 Video player for playing videos-->
 <div ng-include = "'templates/nav1.html'"></div>
+
 <center>
     <div class = "container">
         <video id='myVideo' width="400" controls poster="{{poster}}">
@@ -20,7 +21,7 @@
         <div class="img col-md-3" style="display: inline-block " ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'> -->
         <div class = "myClass">
           <div class = "row">
-            <div class = "span5" ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+            <div class = "span5" ng-repeat="x in data | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
             <div class="card card-1">
                 <a>
                     <img class = "img1" style='border-radius: 12%;' ng-src='{{x.image_path}}' width="250" /><span ng-click="changeUrl(x.dnld_url,x.image_path)" class="icon videoIcon playS moreIcon"></span>

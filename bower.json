@@ -1,0 +1,29 @@
+{
+  "name": "appstore",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "vvamshi6 <vvamshi6@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vvamshi6/AppyStore",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-carousel-3d": "*",
+    "angular-mocks": "^1.5.8",
+    "angular-touch": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "ng-infinite-scroll": "^0.0.1",
+    "ng-simplePagination": "^1.0.3"
+  }
+}

@@ -5,6 +5,11 @@
 * Purpose : User interface for displaying Contentlist
  -->
 <!-- Displaying the Content List -->
+
+
+
+
+
 <div ng-include = "'templates/nav.html'"></div>
 <div class  = "container">
 <!-- <div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()"> -->
@@ -21,11 +26,11 @@
         </div> -->
         <div class = "myClass">
           <div class = "row">
-            <div class = "span5" ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
+            <div  class = "span5" ng-repeat="x in data | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
               <div class="card card-1">
                   <a>
                       <img class = "img1" style="display:inline-block "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
-                      <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class="icon videoIcon playS"></span>
+                      <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid,count:count})" class="icon videoIcon playS"></span>
                   </a>
                   <p>{{x.title}}</p>
                   <br>
@@ -33,6 +38,12 @@
             </div>
           </div>
         <!-- </div> -->
+        <!-- <div>
+          <div infinite-scroll='loadMore()' infiniteScrollHorizontal infinite-scroll-distance='2' >
+            <img ng-repeat='image in images' ng-src='http://placehold.it/225x250&text={{image}}'>
+          </div>
+        </div> -->
+
     </center>
 </div>
 </div>
