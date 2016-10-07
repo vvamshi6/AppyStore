@@ -17,17 +17,8 @@
 <link rel="stylesheet" href="styles/myStyles.css" media="screen" title="no title" charset="utf-8">
 <link href="bower_components/angular-carousel-3d/dist/carousel-3d.css" rel="stylesheet" type="text/css"/>
 <!-- <link href="bower_components/angular-carousel-3d/dist/carousel-3d.min.css" rel="stylesheet" type="text/css"/> -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src = 'bower_components/angular-touch/angular-touch.min.js'></script>
-<script src = 'bower_components/angular-carousel-3d/dist/carousel-3d.js'></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
-<script src="bower_components/ng-simplePagination/simplePagination.js"></script>
-<script src="bower_components/ng-infinite-scroll/ng-infinite-scroll.js"></script>
 </head>
-<body>
+<body ng-app = 'appyStore'>
 <!-- <nav>
   <ul>
     <img class = "float:left" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_7_menu_on-min.png' height="50" width="50">
@@ -47,10 +38,20 @@
   <!-- <div> -->
 <!-- </nav> -->
 <!-- UI-Router -->
-<div ng-app = 'appyStore'>
-  <ui-view>
+<div class = "container-fluid">
+<div ui-view></div>
 </div>
 </body>
+<!-- Dependencies -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src = 'bower_components/angular-touch/angular-touch.min.js'></script>
+<script src = 'bower_components/angular-carousel-3d/dist/carousel-3d.js'></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/ng-simplePagination/simplePagination.js"></script>
+<script src="bower_components/ng-infinite-scroll/ng-infinite-scroll.js"></script>
 <!-- Adding the controller and services -->
 <script src='app.js'></script>
 <script src = 'services/CategoryService.js'></script>
