@@ -6,58 +6,49 @@
  -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>AppyStore</title>
-<!--  Adding the dependency files-->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="styles/myStyles.css" media="screen" title="no title" charset="utf-8">
-<link href="bower_components/angular-carousel-3d/dist/carousel-3d.css" rel="stylesheet" type="text/css"/>
-<!-- <link href="bower_components/angular-carousel-3d/dist/carousel-3d.min.css" rel="stylesheet" type="text/css"/> -->
+
+	<meta charset="UTF-8">
+	<title>AppyStore</title>
+	<!--  Adding the dependency files-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="styles/myStyles.css" media="screen" title="no title" charset="utf-8">
+	<link href="bower_components/angular-carousel-3d/dist/carousel-3d.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="bower_components/angular-carousel-3d/dist/carousel-3d.min.css" rel="stylesheet" type="text/css"/> -->
+
 </head>
-<body ng-app = 'appyStore'>
-<!-- <nav>
-  <ul>
-    <img class = "float:left" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_7_menu_on-min.png' height="50" width="50">
-    <img class = "float_center" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_5_history_on-min.png' height="50" width="50">
-    <img style="float:right" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_8_kart_on-min.png' height="50" width="50">
-    <img style="float:right" src = 'Optimised_icons_all-sizes/drawable-xxxhdpi/Button_6_search_on-min.png' height="50" width="50">
-  </ul> -->
-  <!-- <div id="myModal" class="modal"> -->
-    <!-- <div class="modal-header">
-      <div class="modal-content">
-        <h3><center>Please enter your registered mobile number</center></h3>
-        <center><input type = 'text' placeholder = 'Enter your mobile number'></center>
-        <center><input type = 'submit' value = "Login"></center>
-        <center><p data-dismiss = "modal" aria-hidden="true" style="cursor:pointer"><b>Continue without Login</b></p></center>
-      </div>
-    </div> -->
-  <!-- <div> -->
-<!-- </nav> -->
-<!-- UI-Router -->
-<div class = "container-fluid">
-<div ui-view></div>
-</div>
+<!--Creating the appyStore angular Application-->
+
+<body ng-app='appyStore'>
+	<div class="container-fluid">
+		<!--Ui-view Port for injecting the templates-->
+		<div ui-view></div>
+	</div>
 </body>
+
 <!-- Dependencies -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src = 'bower_components/angular-touch/angular-touch.min.js'></script>
-<script src = 'bower_components/angular-carousel-3d/dist/carousel-3d.js'></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
+<script src='bower_components/angular-touch/angular-touch.min.js'></script>
+<script src='bower_components/angular-carousel-3d/dist/carousel-3d.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.4/ui-bootstrap-tpls.min.js"></script>
 <script src="bower_components/ng-simplePagination/simplePagination.js"></script>
 <script src="bower_components/ng-infinite-scroll/ng-infinite-scroll.js"></script>
+
 <!-- Adding the controller and services -->
 <script src='app.js'></script>
-<script src = 'services/CategoryService.js'></script>
+<script src='services/CategoryService.js'></script>
+<script src='services/searchService.js'></script>
 <script src='controllers/categoryCtrl.js'></script>
-<script src = 'controllers/videoCtrl.js'></script>
-<script src = "controllers/playerCtrl.js"></script>
-<script src = 'controllers/angular-swipe.js'></script>
-<script src = 'controllers/playerVudeoCtrl.js'></script>
+<script src='controllers/videoCtrl.js'></script>
+<script src="controllers/playerCtrl.js"></script>
+<script src="controllers/searchCtrl.js"></script>
+<script src='controllers/angular-swipe.js'></script>
+
 </html>

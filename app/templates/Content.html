@@ -6,53 +6,41 @@
  -->
 <!-- Displaying the Content List -->
 
+<!--Adding Header for Navigation to the template-->
+<div ng-include="'templates/nav.html'"></div>
+<!--Adding the loading gif for the user when the content is loading-->
+<img id="loading" ng-show="loading" src='styles/default.gif'>
 
-
-
-
-<div ng-include = "'templates/nav.html'"></div>
-<div class  = "container">
-<!-- <div ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()"> -->
-    <center>
-        <!-- <div class="img col-md-3" ng-repeat="x in greeting | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
-            <div class="card card-1">
-                <a ng-swipe-right="pagination.prevPage()" ng-swipe-left="pagination.nextPage()">
-                    <img class = "img1" style="display:inline-block "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
-                    <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid})" class="icon videoIcon playS"></span>
-                </a>
-                <p>{{x.title}}</p>
-                <br>
-            </div>
-        </div> -->
-        <div class = "myClass">
-          <div class = "row">
-            <div  class = "span5" ng-repeat="x in data | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage" class='img-responsive'>
-              <div class="card card-1">
-                  <a>
-                      <img class = "img1" style="display:inline-block;border-radius:10px "  ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'/>
-                      <span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid,count:count})" class="icon videoIcon playS"></span>
-                  </a>
-                  <p class = "test2">{{x.title}}</p>
-                  <br>
-              </div>
-            </div>
-          </div>
-        <!-- </div> -->
-        <!-- <div>
-          <div infinite-scroll='loadMore()' infiniteScrollHorizontal infinite-scroll-distance='2' >
-            <img ng-repeat='image in images' ng-src='http://placehold.it/225x250&text={{image}}'>
-          </div>
-        </div> -->
-
-    </center>
+<!--Taking the container for displaying the content list-->
+<!--<div class="container">-->
+<center>
+	<div class="myClass">
+		<div class="row">
+			<div class="span5" ng-repeat="x in data | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage"
+				class='img-responsive'>
+                
+				<!--Card content and images-->
+				<div class="card card-1" style="display:inline-block">
+					<a>
+						<img class="img1" style="display:inline-block;border-radius:10px " ng-src='{{x.image_path}}' width="250" style='border-radius: 10%;'
+						/>
+						<!--Ui-sref for the navigating to the player state-->
+						<span ui-sref="player({url:x.dnld_url,poster:x.image_path,pcatid:pcatid,catid:catid,count:count})" class="icon videoIcon playS"></span>
+					</a>
+					<p>{{x.title}}</p>
+					<br>
+				</div>
+			</div>
+			<!--</div>-->
+</center>
 </div>
 </div>
 <center>
-<div>
-    <!-- Navigation buttons for next and previous pages of  the list -->
-    <center>
-        <button class="button" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0">Previous</button>
-        <button class="button" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages">Next</button>
-    </center>
-</div>
+	<div>
+		<!-- Navigation buttons for next and previous pages of  the list -->
+		<center>
+			<button class="button" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0">Previous</button>
+			<button class="button" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages">Next</button>
+		</center>
+	</div>
 </center>

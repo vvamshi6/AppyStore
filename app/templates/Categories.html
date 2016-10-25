@@ -4,32 +4,26 @@
 * Date :15-09-2016
 * Purpose : User interface for displaying Categorylist
  -->
- <!-- Carousel3d directive for displaying the carousel in 3d format -->
-<div ng-include = "'templates/Nav2.html'"></div>
-<div id = "carousel-3d" carousel3d
-    ng-model="slides" options = "options">
-    <!-- Repeating through the slides object which contains images -->
-    <div carousel3d-slide ng-repeat="slide in slides">
-      <!-- Displaying image and Caption -->
-        <figure>
-            <a><img class = 'img-responsive' ng-src="{{slide.src}}" ng-if = "carousel3d.getCurrentIndex() === $index" ui-sref="videos({pcatid:slide.pcatid,catid:slide.catid,caption:slide.caption,count:slide.count})"alt=""/></a>
-              <img ng-if = "carousel3d.getCurrentIndex() !== $index" ng-src="{{slide.src}}"/>
-            <figcaption ng-bind = "slide.caption"></figcaption>
-        </figure>
-    </div>
-</div>
-<div ng-include = "'templates/footer.html'"></div>
+<!-- Carousel3d directive for displaying the carousel in 3d format -->
 
-<!-- <carousel3d
-            ng-model="slides"
-            options="options"
-        <carousel3d-slide ng-repeat="slide in app.slides">
-            <figure>
-                <img ng-src="{{slide.src}}" alt=""/>
-                <figcaption ng-bind="slide.caption"></figcaption>
-            </figure>
-        </carousel3d-slide>
-    </carousel3d> -->
-<!-- <div ng-repeat = "x in greeting">
-<img ng-src = '{{x.image_path["50x50"]}}'>
-</div> -->
+<!--Adding the header file to the templates for Navigation-->
+<div ng-include="'templates/Nav2.html'" ></div>
+
+<!--Carousel 3d Directive for the 3d carousel-->
+<div id="carousel-3d" carousel3d ng-model="slides" options="options">
+
+	<!-- Repeating through the slides object which contains images -->
+	<div carousel3d-slide ng-repeat="slide in slides">
+		<!-- Displaying image and Caption -->
+        
+		<figure>
+			<a><img class='img-responsive' ng-src="{{slide.src}}" ng-if="carousel3d.getCurrentIndex() === $index" ui-sref="videos({pcatid:slide.pcatid,catid:slide.catid,caption:slide.caption,count:slide.count})"
+					alt="" /></a>
+			<img ng-if="carousel3d.getCurrentIndex() !== $index" ng-src="{{slide.src}}" />
+			<figcaption ng-bind="slide.caption"></figcaption>
+		</figure>
+	</div>
+</div>
+
+<!--Adding footer to the template-->
+<div ng-include="'templates/footer.html'"></div>

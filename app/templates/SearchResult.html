@@ -1,0 +1,26 @@
+<!--
+* FileName:SearchResult.html
+* CreatedBy: Vamsee
+* Date :15-09-2016
+* Purpose : User interface for displaying Search Result
+ -->
+<div>
+	<img id="loading" ng-show="loading" src='styles/default.gif'>
+	<div class="myClass">
+		<div class="row">
+			<div class="span5" ng-repeat="x in data | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage"
+				class='img-responsive'>
+
+				<!--Card content and images-->
+				<div class="card card-1" style="display:inline-block">
+					<a>
+						<img class="img1" style="display:inline-block;border-radius:10px " ng-src='{{x.image_path}}' width="250" height="150" style='border-radius: 10%;'
+						/>
+					</a>
+					<p>{{x.title}}</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

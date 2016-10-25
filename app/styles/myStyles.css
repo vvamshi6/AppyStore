@@ -9,6 +9,15 @@ body {
    /*overflow-y: hidden;*/
    overflow: scroll;
 }
+#footer_menu{
+  top:200px;
+  position:relative;
+  float:right;
+}
+#footer_kart{
+  top:200px;
+  position: relative;
+}
 .search_button{
   float:right;
   top:10px;
@@ -65,7 +74,19 @@ top:5%;
 right:50%;
 outline: none;
 }
-
+#loading{
+  top:100px;position:relative;margin-left:600px;
+}
+input[type=text]{
+  font-family: "Times New Roman", Georgia, Serif;
+    width: 70%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
 .card {
   background: #fff;
   border-radius: 12px;
@@ -74,6 +95,7 @@ outline: none;
   margin: 1rem;
   position: relative;
   width: 270px;
+  text-wrap:normal;
 }
 
 .card-1 {
@@ -100,7 +122,15 @@ outline: none;
 .card-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
+p.test2
+{
+/*width:-1em;*/
+white-space: pre-wrap;
+/*white-space: pre-line;*/
 
+/*text-wrap:none;*/
+/*word-wrap:break-word;*/
+}
 /* The Modal (background) */
 /*.myModal {*/
     display: none; /* Hidden by default */
@@ -152,6 +182,17 @@ a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+.button-light{
+      background-color: white; /* Green */
+    border: none;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-color:black;
 }
 .icon {
   background-image :url('Optimised_icons_all-sizes/drawable-hdpi/Button_29_play_icon_white-min.png');
@@ -206,6 +247,7 @@ div.myClass {
     margin-left: auto;
     margin-right: auto;
 }
+
 .img1{
   img{
     width:250px;
@@ -323,6 +365,9 @@ and (orientation:portrait) {
 and (max-height: 360px)
 and (max-width: 640px)
 and (orientation:landscape){
+  #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -343,6 +388,15 @@ and (orientation:landscape){
     position: relative;
     left: -25%; /* or right 50% */
     text-align: center;
+  }
+  #footer_menu{
+    top:-15px;
+    position:relative;
+    float:right;
+  }
+  #footer_kart{
+    top:-15px;
+    position: relative;
   }
 }
 /*nexus 5s*/
@@ -381,6 +435,9 @@ and (max-height: 411px)
 and (min-width: 641px)
 and (max-width: 731px)
 and (orientation:landscape){
+   #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -401,6 +458,15 @@ and (orientation:landscape){
     position: relative;
     left: -18%; /* or right 50% */
     text-align: center;
+  }
+  #footer_menu{
+    top:9px;
+    position:relative;
+    float:right;
+  }
+  #footer_kart{
+    top:9px;
+    position: relative;
   }
 }
 /* Nexus 6p */
@@ -439,6 +505,9 @@ and (max-height: 435px)
 and (min-width: 732px)
 and (max-width: 773px)
 and (orientation:landscape){
+   #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -459,6 +528,15 @@ and (orientation:landscape){
     position: relative;
     left: -29%; /* or right 50% */
     text-align: center;
+  }
+  #footer_menu{
+    top:9px;
+    position:relative;
+    float:right;
+  }
+  #footer_kart{
+    top:9px;
+    position: relative;
   }
 }
 /* iPhone 5 */
@@ -493,6 +571,9 @@ and (orientation:portrait) {
 and (max-height: 320px)
 and (max-width: 568px)
 and (orientation:landscape){
+  #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -522,6 +603,9 @@ and (max-width: 375px)
 and (min-height: 569px)
 and (max-height: 667px)
 and (orientation:portrait) {
+  #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -551,6 +635,9 @@ and (max-height: 375px)
 and (min-width: 569px)
 and (max-width: 667px)
 and (orientation:landscape){
+  #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -580,6 +667,9 @@ and (max-width: 414px)
 and (min-height: 668px)
 and (max-height: 736px)
 and (orientation:portrait) {
+   #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -609,6 +699,9 @@ and (max-height: 414px)
 and (min-width: 668px)
 and (max-width: 736px)
 and (orientation:landscape){
+     #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -639,6 +732,9 @@ and (max-width: 768px)
 and (min-height: 1000px)
 and (max-height: 1024px)
 and (orientation:portrait) {
+     #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
@@ -660,6 +756,19 @@ and (orientation:portrait) {
     left: -25%; /* or right 50% */
     text-align: center;
   }
+  #footer_menu{
+    top:250px;
+    position:relative;
+    float:right;
+  }
+  #footer_kart{
+    top:250px;
+    position: relative;
+  }
+  #carousel{
+    top: 75px;
+    position: relative;
+  }
 }
 
 @media only screen
@@ -668,6 +777,9 @@ and (max-height: 768px)
 and (min-width: 1000px)
 and (max-width: 1024px)
 and (orientation:landscape){
+     #loading{    
+    top:100px;position:relative;margin-left:250px;
+  }
   .float_center {
     top: 10px;
     float: right;
