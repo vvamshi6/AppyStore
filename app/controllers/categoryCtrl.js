@@ -31,6 +31,7 @@ angular.module('appyStore')
                 'X_APPY_IS_NEW_USER': 'N',
                 'X_APPY_UserAgent': 'Mozilla/5.0 (Linux; Android 5.0.2; Panasonic ELUGA Switch Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36'
             }
+            
             /*Reading the response from the user */
         }).then(function (response) {
             console.log(response);
@@ -53,6 +54,7 @@ angular.module('appyStore')
                 //  autoRotationSpeed: 15000,
                 loop: true
             };
+
             /*Iterating through the result and adding to the scope.slides object */
             angular.forEach($scope.result, function (i) {
                 $scope.slides.push({

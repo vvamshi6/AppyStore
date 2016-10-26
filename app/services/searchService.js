@@ -1,6 +1,14 @@
+/*
+* FileName:searchService.js
+* CreatedBy: Vamsee
+* Date :15-09-2016
+* Purpose : User interface for displaying Categorylist
+*/
+/**Creating SearchService factory for the appyStore */
 angular.module('appyStore').factory('SearchService', function ($http) {
     var data = [];
     return {
+        /**Function to call the RestAPI */
         getData: function (url) {
             return $http.get(url, {
                 headers: {

@@ -1,3 +1,9 @@
+/*
+ * FileName:searchCtrl.js
+ * CreatedBy: Vamsee
+ * Date :16-10-2016
+ * Purpose : Search Controller for the search
+ */
 angular.module('appyStore')
     .controller('searchCtrl', function ($scope, SearchService, $state) {
         if (!$scope.loading) {

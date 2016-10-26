@@ -28,6 +28,7 @@ angular.module('appyStore')
         $scope.goBack = function() {
             window.history.back();
         };
+        
         /*Reading the stateparams object*/
         if ($stateParams.poster) {
             $scope.poster = $stateParams.poster;
